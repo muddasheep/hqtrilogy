@@ -1,0 +1,3 @@
+@echo off
+echo Starting %1.bsp ...
+"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\hl.exe" -console -game hqtrilogy -dev +map %1
