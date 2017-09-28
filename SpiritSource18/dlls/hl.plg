@@ -1,0 +1,273 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cl_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPF2F1.TMP" with contents
+[
+/nologo /MT /W3 /GX /Zi /O1 /I "..\utils\vgui\include" /I "..\engine" /I "..\common" /I "..\pm_shared" /I "..\dlls" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "CLIENT_DLL" /D "CLIENT_WEAPONS" /Fr".\Release/" /Fp".\Release/cl_dll.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c 
+"C:\Program Files\Hammer Editor\sourcecode\spirit\spirit15alpha4\cl_dll\rain.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPF2F1.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPF2F2.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib winmm.lib ../utils/vgui/lib/win32_vc6/vgui.lib wsock32.lib opengl32.lib ../common/cg/cg.lib ../common/cg/cgGL.lib /nologo /subsystem:windows /dll /incremental:no /pdb:".\Release/client.pdb" /machine:I386 /out:".\Release\client.dll" /implib:".\Release/client.lib" 
+".\Release\crossbow.obj"
+".\Release\crowbar.obj"
+".\Release\CustomMenu.obj"
+".\Release\egon.obj"
+".\Release\ev_hldm.obj"
+".\Release\gauss.obj"
+".\Release\glock.obj"
+".\Release\handgrenade.obj"
+".\Release\hl_baseentity.obj"
+".\Release\hl_events.obj"
+".\Release\hl_objects.obj"
+".\Release\hl_weapons.obj"
+".\Release\hornetgun.obj"
+".\Release\interface.obj"
+".\Release\mp5.obj"
+".\Release\python.obj"
+".\Release\rpg.obj"
+".\Release\satchel.obj"
+".\Release\shotgun.obj"
+".\Release\squeakgrenade.obj"
+".\Release\tripmine.obj"
+".\Release\vgui_scrollbar2.obj"
+".\Release\vgui_slider2.obj"
+".\Release\voice_banmgr.obj"
+".\Release\voice_status.obj"
+".\Release\voice_vgui_tweakdlg.obj"
+".\Release\ammo.obj"
+".\Release\ammo_secondary.obj"
+".\Release\ammohistory.obj"
+".\Release\battery.obj"
+".\Release\cdll_int.obj"
+".\Release\com_weapons.obj"
+".\Release\death.obj"
+".\Release\demo.obj"
+".\Release\entity.obj"
+".\Release\ev_common.obj"
+".\Release\events.obj"
+".\Release\flashlight.obj"
+".\Release\GameStudioModelRenderer.obj"
+".\Release\geiger.obj"
+".\Release\glow.obj"
+".\Release\health.obj"
+".\Release\hud.obj"
+".\Release\hud_msg.obj"
+".\Release\hud_redraw.obj"
+".\Release\hud_servers.obj"
+".\Release\hud_spectator.obj"
+".\Release\hud_update.obj"
+".\Release\in_camera.obj"
+".\Release\input.obj"
+".\Release\inputw32.obj"
+".\Release\menu.obj"
+".\Release\message.obj"
+".\Release\mp3.obj"
+".\Release\parsemsg.obj"
+".\Release\particlemgr.obj"
+".\Release\particlemsg.obj"
+".\Release\particlesys.obj"
+".\Release\pm_debug.obj"
+".\Release\pm_math.obj"
+".\Release\pm_shared.obj"
+".\Release\rain.obj"
+".\Release\saytext.obj"
+".\Release\status_icons.obj"
+".\Release\statusbar.obj"
+".\Release\studio_util.obj"
+".\Release\StudioModelRenderer.obj"
+".\Release\text_message.obj"
+".\Release\train.obj"
+".\Release\tri.obj"
+".\Release\util.obj"
+".\Release\vgui_checkbutton2.obj"
+".\Release\vgui_ClassMenu.obj"
+".\Release\vgui_ConsolePanel.obj"
+".\Release\vgui_ControlConfigPanel.obj"
+".\Release\vgui_CustomObjects.obj"
+".\Release\vgui_grid.obj"
+".\Release\vgui_helpers.obj"
+".\Release\vgui_int.obj"
+".\Release\vgui_listbox.obj"
+".\Release\vgui_loadtga.obj"
+".\Release\vgui_MOTDWindow.obj"
+".\Release\vgui_SchemeManager.obj"
+".\Release\vgui_ScorePanel.obj"
+".\Release\vgui_ServerBrowser.obj"
+".\Release\vgui_SpectatorPanel.obj"
+".\Release\vgui_TeamFortressViewport.obj"
+".\Release\vgui_teammenu.obj"
+".\Release\view.obj"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPF2F2.TMP"
+Creating temporary file "C:\WINDOWS\TEMP\RSPF2F3.BAT" with contents
+[
+@echo off
+copy .\Release\client.dll "c:\games\half-life\spirit\cl_dlls\client1.5a4.dll"
+copy .\Release\client.dll "c:\games\half-life\spirit\cl_dlls\client.dll"
+]
+Creating command line "C:\WINDOWS\TEMP\RSPF2F3.BAT"
+Compiling...
+rain.cpp
+Linking...
+   Creating library .\Release/client.lib and object .\Release/client.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\client.dll
+        1 file(s) copied
+        1 file(s) copied
+
+
+
+<h3>Results</h3>
+client.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: hl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP62.TMP" with contents
+[
+/nologo /G5 /MT /W3 /O1 /I "..\dlls" /I "..\engine" /I "..\common" /I "..\pm_shared" /I "..\game_shared" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "QUIVER" /D "VOXEL" /D "QUAKE2" /D "VALVE_DLL" /D "CLIENT_WEAPONS" /Fr".\Releasehl/" /Fp".\Releasehl/hl.pch" /YX /Fo".\Releasehl/" /Fd".\Releasehl/" /FD /c 
+"C:\Program Files\Hammer Editor\sourcecode\spirit\spirit15alpha4\dlls\effects.cpp"
+"C:\Program Files\Hammer Editor\sourcecode\spirit\spirit15alpha4\dlls\weapons.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP62.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP0063.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /dll /incremental:no /pdb:".\Releasehl/spirit.pdb" /machine:I386 /def:".\hl.def" /out:".\Releasehl/spirit.dll" /implib:".\Releasehl/spirit.lib" 
+".\Releasehl\aflock.obj"
+".\Releasehl\agrunt.obj"
+".\Releasehl\AI_BaseNPC_Schedule.obj"
+".\Releasehl\airtank.obj"
+".\Releasehl\alias.obj"
+".\Releasehl\animating.obj"
+".\Releasehl\animation.obj"
+".\Releasehl\apache.obj"
+".\Releasehl\barnacle.obj"
+".\Releasehl\barney.obj"
+".\Releasehl\bigmomma.obj"
+".\Releasehl\bloater.obj"
+".\Releasehl\bmodels.obj"
+".\Releasehl\bullsquid.obj"
+".\Releasehl\buttons.obj"
+".\Releasehl\cbase.obj"
+".\Releasehl\client.obj"
+".\Releasehl\combat.obj"
+".\Releasehl\controller.obj"
+".\Releasehl\crossbow.obj"
+".\Releasehl\crowbar.obj"
+".\Releasehl\debugger.obj"
+".\Releasehl\defaultai.obj"
+".\Releasehl\doors.obj"
+".\Releasehl\effects.obj"
+".\Releasehl\egon.obj"
+".\Releasehl\explode.obj"
+".\Releasehl\flyingmonster.obj"
+".\Releasehl\func_break.obj"
+".\Releasehl\func_tank.obj"
+".\Releasehl\game.obj"
+".\Releasehl\gamerules.obj"
+".\Releasehl\gargantua.obj"
+".\Releasehl\gauss.obj"
+".\Releasehl\genericmonster.obj"
+".\Releasehl\ggrenade.obj"
+".\Releasehl\globals.obj"
+".\Releasehl\glock.obj"
+".\Releasehl\gman.obj"
+".\Releasehl\h_ai.obj"
+".\Releasehl\h_battery.obj"
+".\Releasehl\h_cine.obj"
+".\Releasehl\h_cycler.obj"
+".\Releasehl\h_export.obj"
+".\Releasehl\handgrenade.obj"
+".\Releasehl\hassassin.obj"
+".\Releasehl\headcrab.obj"
+".\Releasehl\healthkit.obj"
+".\Releasehl\hgrunt.obj"
+".\Releasehl\hornet.obj"
+".\Releasehl\hornetgun.obj"
+".\Releasehl\houndeye.obj"
+".\Releasehl\ichthyosaur.obj"
+".\Releasehl\islave.obj"
+".\Releasehl\items.obj"
+".\Releasehl\leech.obj"
+".\Releasehl\lights.obj"
+".\Releasehl\locus.obj"
+".\Releasehl\maprules.obj"
+".\Releasehl\monstermaker.obj"
+".\Releasehl\monsters.obj"
+".\Releasehl\monsterstate.obj"
+".\Releasehl\mortar.obj"
+".\Releasehl\movewith.obj"
+".\Releasehl\mp5.obj"
+".\Releasehl\multiplay_gamerules.obj"
+".\Releasehl\nihilanth.obj"
+".\Releasehl\nodes.obj"
+".\Releasehl\osprey.obj"
+".\Releasehl\pathcorner.obj"
+".\Releasehl\plane.obj"
+".\Releasehl\plats.obj"
+".\Releasehl\player.obj"
+".\Releasehl\pm_debug.obj"
+".\Releasehl\pm_math.obj"
+".\Releasehl\pm_shared.obj"
+".\Releasehl\python.obj"
+".\Releasehl\rat.obj"
+".\Releasehl\roach.obj"
+".\Releasehl\rpg.obj"
+".\Releasehl\satchel.obj"
+".\Releasehl\scientist.obj"
+".\Releasehl\scripted.obj"
+".\Releasehl\shotgun.obj"
+".\Releasehl\singleplay_gamerules.obj"
+".\Releasehl\skill.obj"
+".\Releasehl\sound.obj"
+".\Releasehl\soundent.obj"
+".\Releasehl\spectator.obj"
+".\Releasehl\squadmonster.obj"
+".\Releasehl\squeakgrenade.obj"
+".\Releasehl\subs.obj"
+".\Releasehl\talkmonster.obj"
+".\Releasehl\teamplay_gamerules.obj"
+".\Releasehl\tempmonster.obj"
+".\Releasehl\tentacle.obj"
+".\Releasehl\triggers.obj"
+".\Releasehl\tripmine.obj"
+".\Releasehl\turret.obj"
+".\Releasehl\util.obj"
+".\Releasehl\voice_gamemgr.obj"
+".\Releasehl\weapons.obj"
+".\Releasehl\world.obj"
+".\Releasehl\xen.obj"
+".\Releasehl\zombie.obj"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP0063.TMP"
+Creating temporary file "C:\WINDOWS\TEMP\RSP0064.BAT" with contents
+[
+@echo off
+copy .\Releasehl\spirit.dll "c:\games\half-life\spirit\dlls\spirit.dll"
+copy .\Releasehl\spirit.dll "c:\games\half-life\spirit\dlls\spirit1.5a4.dll"
+]
+Creating command line "C:\WINDOWS\TEMP\RSP0064.BAT"
+Compiling...
+effects.cpp
+weapons.cpp
+Linking...
+   Creating library .\Releasehl/spirit.lib and object .\Releasehl/spirit.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Releasehl\spirit.dll
+        1 file(s) copied
+        1 file(s) copied
+
+
+
+<h3>Results</h3>
+spirit.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
