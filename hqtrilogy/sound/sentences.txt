@@ -1,9 +1,54 @@
 // HALF-LIFE SPEECH SYSTEM SENTENCES. DO NOT MODIFY THIS FILE! Max of 1023 sentences.
 
-VINODIE test/die
-
 MANSON hq/manson
 DIE hq/man_die_part4
+BJ_01 ambience/bj_01.wav
+MS_01 ambience/ms_01.wav
+JM_01 ambience/jm_01.wav
+BJ_EXEC hq2/bj_exec2.wav
+MS_ESS1 hq2/ms_ess1.wav
+MS_ESS2 hq2/ms_ess2.wav
+MS_ESS3 hq2/ms_ess3.wav
+MS_AMBI hq2/amb_ms.wav
+WACHE1 sapience/wache1.wav
+WACHE1b sapience/wache1b.wav
+WACHE1c sapience/wache1c.wav
+SISSI1 sapience/sissi1.wav
+SISSI1b sapience/sissi1b.wav
+WHITE1 sapience/white1.wav
+WHITE2 sapience/white2.wav
+WHITE3 sapience/white3.wav
+WACHE2 sapience/changewach1.wav
+WACHE2b sapience/changewach2.wav
+PAINT1 sapience/paint1.wav
+PAINT2 sapience/paint2.wav
+PAINT3 sapience/paint3.wav
+TRUTH1 sapience/truhnmensch1.wav
+TRUTH2 sapience/truhnmensch2.wav
+XMAS sapience/xmasdude.wav
+XMAS2 sapience/xmasdude2.wav
+BJ_PAT pestilence/bj.wav
+
+
+// alien slave
+SLV_IDLE0 aslave/slv_word1 slv_word2
+SLV_IDLE1 aslave/slv_word2 slv_word3(p95)
+SLV_IDLE2 aslave/slv_word3 slv_word4
+SLV_IDLE3 aslave/slv_word4 slv_word5 slv_word5(p90)
+SLV_IDLE4 aslave/slv_word2(p110) slv_word6 slv_word7 slv_word3
+SLV_IDLE5 aslave/slv_word6 slv_word7 slv_word2
+SLV_IDLE6 aslave/slv_word7 slv_word8 slv_word3
+SLV_IDLE7 aslave/slv_word8 slv_word1 slv_word8 slv_word8(p95)
+SLV_IDLE8 aslave/slv_word1(p115) slv_word6
+SLV_IDLE9 aslave/slv_word3 slv_word3(p90)
+SLV_IDLE10 aslave/slv_word7(p85)
+
+SLV_ALERT0 aslave/(p105) slv_alert1 slv_word2
+SLV_ALERT1 aslave/(p105) slv_word8 slv_word8 slv_word8 slv_alert1
+SLV_ALERT2 aslave/(p105) slv_alert4 slv_word4 slv_alert3
+SLV_ALERT3 aslave/(p108) slv_alert1 slv_word8
+SLV_ALERT4 aslave/(p108) slv_word8(p110) slv_word8 slv_word8
+SLV_ALERT5 aslave/(p108) slv_alert4 slv_word8 slv_alert1
 
 // HUMAN GRUNTS
 HG_GREN0 hgrunt/clik(p120) grenade! clik
