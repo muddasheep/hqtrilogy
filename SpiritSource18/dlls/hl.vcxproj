@@ -16,6 +16,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1C9F46EB-3FE6-41D1-9108-B30FCA334712}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -108,7 +109,6 @@ copy "$(TargetDir)"spirit.dll "c:\games\half-life\spirit\dlls\spirit1.8a1.dll"
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>.\Releasehl/spirit.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>.\hl.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>.\Releasehl/spirit.pdb</ProgramDatabaseFile>
@@ -117,6 +117,7 @@ copy "$(TargetDir)"spirit.dll "c:\games\half-life\spirit\dlls\spirit1.8a1.dll"
       <DataExecutionPrevention />
       <ImportLibrary>.\Releasehl/spirit.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(OutDir)spirit.dll</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">

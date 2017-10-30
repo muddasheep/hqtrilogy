@@ -1570,7 +1570,7 @@ void CWatcherRatio :: UpdateState(CBaseEntity* pLocus, bool mustTrigger)
 	pev->frags = testVal; // store it for next time
 
 	bool testresult;
-	bool withinTolerance = abs(testVal - cmpVal) <= toleranceVal;
+	bool withinTolerance = fabs(testVal - cmpVal) <= toleranceVal;
 	switch( pev->impulse )
 	{
 	case WRC_Equal:
