@@ -316,7 +316,10 @@ void W_Precache(void)
 	UTIL_PrecacheOther( "ammo_buckshot" );
 
 	// crowbar
-	UTIL_PrecacheOtherWeapon( "weapon_crowbar" );
+	UTIL_PrecacheOtherWeapon("weapon_crowbar");
+
+	// swordofsadism
+	UTIL_PrecacheOtherWeapon("weapon_swordofsadism");
 
 	// glock
 	UTIL_PrecacheOtherWeapon( "weapon_9mmhandgun" );

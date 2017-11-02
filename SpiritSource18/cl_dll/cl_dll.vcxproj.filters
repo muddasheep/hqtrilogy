@@ -289,6 +289,9 @@
     <ClCompile Include="..\game_shared\voice_vgui_tweakdlg.cpp">
       <Filter>Source Files\hl</Filter>
     </ClCompile>
+    <ClCompile Include="..\dlls\swordofsadism.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ammo.h">

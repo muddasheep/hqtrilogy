@@ -330,6 +330,9 @@
     <ClCompile Include="zombie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="swordofsadism.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Corel\Draw70\Custom\corelpnt.cpl">
