@@ -499,6 +499,19 @@ void CBasePlayer :: TraceAttack( entvars_t *pevAttacker, float flDamage, Vector 
 	}
 }
 
+bool has_sword_equipped(CBasePlayerItem *m_pActiveItem) {
+
+	if (m_pActiveItem) {
+		ItemInfo III;
+		memset(&III, 0, sizeof(III));
+		m_pActiveItem->GetItemInfo(&III);
+
+		return III.iId == WEAPON_SWORDOFSADISM;
+	}
+
+	return false;
+}
+
 /*
 	Take some damage.
 	NOTE: each call to TakeDamage with bitsDamageType set to a time-based damage
@@ -530,6 +543,10 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 		// blasts damage armor more.
 		flBonus *= 2;
 	}
+
+	// don't take damage if sword is equipped
+	if (has_sword_equipped(m_pActiveItem))
+		return 0;
 
 	// Already dead
 	if ( !IsAlive() )
