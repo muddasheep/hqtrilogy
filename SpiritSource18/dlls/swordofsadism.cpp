@@ -38,7 +38,7 @@ void CSwordOfSadism::Spawn( )
 {
 	Precache( );
 	m_iId = WEAPON_SWORDOFSADISM;
-	SET_MODEL(ENT(pev), "models/w_crowbar.mdl");
+	SET_MODEL(ENT(pev), "models/w_swordofsadism.mdl");
 	m_iClip = -1;
 
 	FallInit();// get ready to fall down.
@@ -47,15 +47,15 @@ void CSwordOfSadism::Spawn( )
 
 void CSwordOfSadism::Precache( void )
 {
-	PRECACHE_MODEL("models/v_crowbar.mdl");
-	PRECACHE_MODEL("models/w_crowbar.mdl");
-	PRECACHE_MODEL("models/p_crowbar.mdl");
-	PRECACHE_SOUND("weapons/cbar_hit1.wav");
-	PRECACHE_SOUND("weapons/cbar_hit2.wav");
-	PRECACHE_SOUND("weapons/cbar_hitbod1.wav");
-	PRECACHE_SOUND("weapons/cbar_hitbod2.wav");
-	PRECACHE_SOUND("weapons/cbar_hitbod3.wav");
-	PRECACHE_SOUND("weapons/cbar_miss1.wav");
+	PRECACHE_MODEL("models/v_swordofsadism.mdl");
+	PRECACHE_MODEL("models/w_swordofsadism.mdl");
+	PRECACHE_MODEL("models/p_swordofsadism.mdl");
+	PRECACHE_SOUND("weapons/swordofsadism_hit1.wav");
+	PRECACHE_SOUND("weapons/swordofsadism_hit2.wav");
+	PRECACHE_SOUND("weapons/swordofsadism_hitbod1.wav");
+	PRECACHE_SOUND("weapons/swordofsadism_hitbod2.wav");
+	PRECACHE_SOUND("weapons/swordofsadism_hitbod3.wav");
+	PRECACHE_SOUND("weapons/swordofsadism_miss1.wav");
 }
 
 int CSwordOfSadism::GetItemInfo(ItemInfo *p)
@@ -75,7 +75,7 @@ int CSwordOfSadism::GetItemInfo(ItemInfo *p)
 
 BOOL CSwordOfSadism::Deploy( )
 {
-	return DefaultDeploy( "models/v_crowbar.mdl", "models/p_crowbar.mdl", CROWBAR_DRAW, "crowbar" );
+	return DefaultDeploy( "models/v_swordofsadism.mdl", "models/p_swordofsadism.mdl", CROWBAR_DRAW, "crowbar" );
 }
 
 void FindHullIntersectionSword(const Vector &vecSrc, TraceResult &tr, float *mins, float *maxs, edict_t *pEntity)
@@ -191,7 +191,7 @@ int CSwordOfSadism::Swing( int fFirst )
 			}
 			m_flNextPrimaryAttack =  m_flNextSecondaryAttack = UTIL_WeaponTimeBase() + 0.5;
 			// play wiff or swish sound
-			EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_WEAPON, "weapons/cbar_miss1.wav", 1, ATTN_NORM, 0, 94 + RANDOM_LONG(0,0xF));
+			EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_WEAPON, "weapons/swordofsadism_miss1.wav", 1, ATTN_NORM, 0, 94 + RANDOM_LONG(0,0xF));
 			// player "shoot" animation
 			m_pPlayer->SetAnimation( PLAYER_ATTACK1 );
 		}
@@ -231,9 +231,9 @@ int CSwordOfSadism::Swing( int fFirst )
 				// play thwack or smack sound
 				switch( RANDOM_LONG(0,2) )
 				{
-				case 0: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/cbar_hitbod1.wav", 1, ATTN_NORM); break;
-				case 1: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/cbar_hitbod2.wav", 1, ATTN_NORM); break;
-				case 2: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/cbar_hitbod3.wav", 1, ATTN_NORM); break;
+				case 0: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/swordofsadism_hitbod1.wav", 1, ATTN_NORM); break;
+				case 1: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/swordofsadism_hitbod2.wav", 1, ATTN_NORM); break;
+				case 2: EMIT_SOUND(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/swordofsadism_hitbod3.wav", 1, ATTN_NORM); break;
 				}
 				m_pPlayer->m_iWeaponVolume = CROWBAR_BODYHIT_VOLUME;
 				if ( !pEntity->IsAlive() )
@@ -266,8 +266,8 @@ int CSwordOfSadism::Swing( int fFirst )
 			// also play crowbar strike
 			switch( RANDOM_LONG(0,1) )
 			{
-			case 0: EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/cbar_hit1.wav", fvolbar, ATTN_NORM, 0, 98 + RANDOM_LONG(0,3)); break;
-			case 1: EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/cbar_hit2.wav", fvolbar, ATTN_NORM, 0, 98 + RANDOM_LONG(0,3)); break;
+			case 0: EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/swordofsadism_hit1.wav", fvolbar, ATTN_NORM, 0, 98 + RANDOM_LONG(0,3)); break;
+			case 1: EMIT_SOUND_DYN(ENT(m_pPlayer->pev), CHAN_ITEM, "weapons/swordofsadism_hit2.wav", fvolbar, ATTN_NORM, 0, 98 + RANDOM_LONG(0,3)); break;
 			}
 
 			// delay the decal a bit
