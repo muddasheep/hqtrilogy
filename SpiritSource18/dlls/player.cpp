@@ -544,9 +544,9 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 		flBonus *= 2;
 	}
 
-	// don't take damage if sword is equipped
-	if (has_sword_equipped(m_pActiveItem))
-		return 0;
+	// don't take damage if sword is equipped and damage is below 100
+	if (has_sword_equipped(m_pActiveItem) && flDamage < 100)
+		return 1;
 
 	// Already dead
 	if ( !IsAlive() )
