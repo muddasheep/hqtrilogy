@@ -336,6 +336,9 @@
     <ClCompile Include="dragon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="grayslave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Corel\Draw70\Custom\corelpnt.cpl">

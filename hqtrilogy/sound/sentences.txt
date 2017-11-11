@@ -50,6 +50,26 @@ SLV_ALERT3 aslave/(p108) slv_alert1 slv_word8
 SLV_ALERT4 aslave/(p108) slv_word8(p110) slv_word8 slv_word8
 SLV_ALERT5 aslave/(p108) slv_alert4 slv_word8 slv_alert1
 
+// gray alien slave
+GRAY_SLV_IDLE0 grayslave/slv_word1 slv_word2
+GRAY_SLV_IDLE1 grayslave/slv_word2 slv_word3(p95)
+GRAY_SLV_IDLE2 grayslave/slv_word3 slv_word4
+GRAY_SLV_IDLE3 grayslave/slv_word4 slv_word5 slv_word5(p90)
+GRAY_SLV_IDLE4 grayslave/slv_word2(p110) slv_word6 slv_word7 slv_word3
+GRAY_SLV_IDLE5 grayslave/slv_word6 slv_word7 slv_word2
+GRAY_SLV_IDLE6 grayslave/slv_word7 slv_word8 slv_word3
+GRAY_SLV_IDLE7 grayslave/slv_word8 slv_word1 slv_word8 slv_word8(p95)
+GRAY_SLV_IDLE8 grayslave/slv_word1(p115) slv_word6
+GRAY_SLV_IDLE9 grayslave/slv_word3 slv_word3(p90)
+GRAY_SLV_IDLE10 grayslave/slv_word7(p85)
+
+GRAY_SLV_ALERT0 grayslave/(p105) slv_alert1 slv_word2
+GRAY_SLV_ALERT1 grayslave/(p105) slv_word8 slv_word8 slv_word8 slv_alert1
+GRAY_SLV_ALERT2 grayslave/(p105) slv_alert4 slv_word4 slv_alert3
+GRAY_SLV_ALERT3 grayslave/(p108) slv_alert1 slv_word8
+GRAY_SLV_ALERT4 grayslave/(p108) slv_word8(p110) slv_word8 slv_word8
+GRAY_SLV_ALERT5 grayslave/(p108) slv_alert4 slv_word8 slv_alert1
+
 // HUMAN GRUNTS
 HG_GREN0 hgrunt/clik(p120) grenade! clik
 HG_GREN1 hgrunt/(t30) clik take!(e75) cover!(s5) clik
