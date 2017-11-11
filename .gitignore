@@ -214,3 +214,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+SpiritSource18/dlls/.vs/hl/v15/.suo
+*.db
