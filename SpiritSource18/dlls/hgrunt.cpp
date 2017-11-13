@@ -135,6 +135,7 @@ public:
 	BOOL CheckMeleeAttack1 ( float flDot, float flDist );
 	BOOL CheckRangeAttack1 ( float flDot, float flDist );
 	BOOL CheckRangeAttack2 ( float flDot, float flDist );
+	virtual float GetKickDamageAmount(void) { return gSkillData.hgruntDmgKick; }
 	void CheckAmmo ( void );
 	void SetActivity ( Activity NewActivity );
 	void StartTask ( Task_t *pTask );
@@ -1030,7 +1031,7 @@ void CHGrunt :: HandleAnimEvent( MonsterEvent_t *pEvent )
 				UTIL_MakeVectors( pev->angles );
 				pHurt->pev->punchangle.x = 15;
 				pHurt->pev->velocity = pHurt->pev->velocity + gpGlobals->v_forward * 100 + gpGlobals->v_up * 50;
-				pHurt->TakeDamage( pev, pev, gSkillData.hgruntDmgKick, DMG_CLUB );
+				pHurt->TakeDamage( pev, pev, GetKickDamageAmount(), DMG_CLUB );
 			}
 		}
 		break;
@@ -2622,3 +2623,35 @@ void CDeadHGrunt :: Spawn( void )
 
 	MonsterInitDead();
 }
+
+
+
+class CVictimGrunt : public CHGrunt
+{
+public:
+	void Spawn(void);
+	void Precache(void);
+	float GetKickDamageAmount(void) { return 500; }
+};
+
+void CVictimGrunt::Spawn()
+{
+	CHGrunt::Spawn();
+
+	SET_MODEL(ENT(pev), "models/victim_grunt.mdl");
+	UTIL_SetSize(pev, VEC_HUMAN_HULL_MIN, VEC_HUMAN_HULL_MAX);
+
+	pev->health = 20000;
+}
+
+//=========================================================
+// Precache - precaches all resources this monster needs
+//=========================================================
+void CVictimGrunt::Precache()
+{
+	PRECACHE_MODEL("models/victim_grunt.mdl");
+	CHGrunt::Precache();
+}
+
+LINK_ENTITY_TO_CLASS(monster_victim_grunt, CVictimGrunt);
+
