@@ -18,8 +18,9 @@
 
   Utility code.  Really not optional after all.
 
+#include <string>         // std::string
 */
-
+#include <string>         // std::string
 #include "extdll.h"
 #include "util.h"
 #include "cbase.h"
@@ -1057,6 +1058,18 @@ void UTIL_ScreenFade( CBaseEntity *pEntity, const Vector &color, float fadeTime,
 	UTIL_ScreenFadeWrite( fade, pEntity );
 }
 
+string_t halfquake_part() {
+	std::string s = STRING(gpGlobals->mapname);
+	if (s.find("hq2_")) {
+		return MAKE_STRING("hq2");
+	}
+
+	if (s.find("hq3_")) {
+		return MAKE_STRING("hq3");
+	}
+
+	return MAKE_STRING("hq1");
+}
 
 void UTIL_HudMessage( CBaseEntity *pEntity, const hudtextparms_t &textparms, const char *pMessage )
 {
