@@ -351,7 +351,7 @@ void CGameText::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE use
 		SetThink(&CGameText:: TriggerThink );
 		SetNextThink( m_textParms.fadeinTime + m_textParms.holdTime + m_textParms.fadeoutTime );
 //		ALERT(at_console, "GameText sets NextThink = %f\n", m_textParms.fadeinTime + m_textParms.holdTime + m_textParms.fadeoutTime);
-}
+    }
 	else if ( pev->spawnflags & SF_ENVTEXT_ONLY_ONCE )
 	{
 		SetThink(&CGameText:: SUB_Remove );

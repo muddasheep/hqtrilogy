@@ -4362,7 +4362,7 @@ void CBasePlayer :: UpdateClientData( void )
 		if (!FNullEnt(pViewEnt))
 		{
 			indexToSend = pViewEnt->entindex();
-			ALERT(at_aiconsole, "View data : activated with index %i and flags %i\n", indexToSend, viewFlags);
+//			ALERT(at_console, "View data : activated with index %i and flags %i\n", indexToSend, viewFlags);
 		}
 		else
 		{

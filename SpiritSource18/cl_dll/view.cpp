@@ -535,7 +535,7 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 				pparams->viewangles[2] = viewentity->angles[2];
 				pparams->crosshairangle[PITCH] = 100; // test // ugly method to remove crosshair from screen
 				
-				if(gHUD.viewFlags & 8 )	//AJH Do we draw the player in the camera?
+				if(gHUD.viewFlags & 8)	//AJH Do we draw the player in the camera?
 				{
 					gHUD.m_iCameraMode=2;
 				}
@@ -885,7 +885,7 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 			pparams->viewangles[2] = viewentity->angles[2];
 			pparams->crosshairangle[PITCH] = 100; // test // ugly method to remove crosshair from screen
 			
-			if(gHUD.viewFlags & 8 )	//AJH Do we draw the player in the camera?
+			if(gHUD.viewFlags & 8)	//AJH Do we draw the player in the camera?
 			{
 				gHUD.m_iCameraMode=2;
 			}
@@ -897,8 +897,10 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 		else
 			gEngfuncs.Con_Printf( "Warning : invalid view ent index: %i\n", gHUD.viewEntityIndex );
 	}
-	else
+	else {
 		pparams->crosshairangle[PITCH] = 0; // test
+		gHUD.m_iCameraMode = 0;
+	}
 
 	// LRC - override the view position if we're drawing a sky, rather than the player's view
 	if (gHUD.m_iSkyMode >= SKY_ON && pparams->nextView == 0) 

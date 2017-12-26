@@ -229,8 +229,8 @@ int CHud :: Redraw( float flTime, int intermission )
 			SPR_DrawAdditive( 0,  x, y, &gHUD.GetSpriteRect(HUD_camera_rect));
 	}
 
-	if ((viewFlags & 1) && !(viewFlags & 2)) // custom view active, and flag "draw hud" isnt set
-		return 1;
+	//if ((viewFlags & 1) && !(viewFlags & 2)) // custom view active, and flag "draw hud" isnt set
+//		return 1;
 	
 	if ( m_pCvarDraw->value )
 	{

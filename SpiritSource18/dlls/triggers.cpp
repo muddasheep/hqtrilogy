@@ -6053,8 +6053,8 @@ void CTriggerCamera::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYP
 		{
 			int sendflags =	0;
 			sendflags |= 1;
-			if (pev->spawnflags & SF_CAMERA_DRAWHUD)
-		         		sendflags |= 2;
+			sendflags |= 2;
+			sendflags |= 8;
 			((CBasePlayer *)pActivator)->viewEntity = m_iszViewEntity;
 			((CBasePlayer *)pActivator)->viewFlags = sendflags;
 			((CBasePlayer *)pActivator)->viewNeedsUpdate = 1;
@@ -6064,8 +6064,10 @@ void CTriggerCamera::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYP
 	{
 		int sendflags =	0;
 		sendflags |= 1;
-		if (pev->spawnflags & SF_CAMERA_DRAWHUD)
+		if (pev->spawnflags & SF_CAMERA_DRAWHUD) {
 			sendflags |= 2;
+		}
+		sendflags |= 8;
 		((CBasePlayer *)pActivator)->viewEntity = pev->targetname;
 		((CBasePlayer *)pActivator)->viewFlags = sendflags;
 		((CBasePlayer *)pActivator)->viewNeedsUpdate = 1;
