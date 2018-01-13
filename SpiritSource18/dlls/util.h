@@ -580,3 +580,9 @@ CBaseEntity* UTIL_FollowReference( CBaseEntity* pStartEntity, const char* szName
 
 // for trigger_viewset
 int HaveCamerasInPVS( edict_t* edict );
+
+char * con(const char * first, const char * second);
+char *button_path(char * filename);
+
+// to determine the current halfquake part
+char * halfquake_part();
