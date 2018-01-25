@@ -492,44 +492,44 @@ void CBaseDoor::Precache( void )
 		pev->noiseMoving = MAKE_STRING("common/null.wav");
 		break;
 	case	1:
-		PRECACHE_SOUND ("doors/doormove1.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove1.wav");
+		PRECACHE_SOUND (DOOR_PATH("/doormove1.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove1.wav"));
 		break;
 	case	2:
-		PRECACHE_SOUND ("doors/doormove2.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove2.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove2.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove2.wav"));
 		break;
 	case	3:
-		PRECACHE_SOUND ("doors/doormove3.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove3.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove3.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove3.wav"));
 		break;
 	case	4:
-		PRECACHE_SOUND ("doors/doormove4.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove4.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove4.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove4.wav"));
 		break;
 	case	5:
-		PRECACHE_SOUND ("doors/doormove5.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove5.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove5.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove5.wav"));
 		break;
 	case	6:
-		PRECACHE_SOUND ("doors/doormove6.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove6.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove6.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove6.wav"));
 		break;
 	case	7:
-		PRECACHE_SOUND ("doors/doormove7.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove7.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove7.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove7.wav"));
 		break;
 	case	8:
-		PRECACHE_SOUND ("doors/doormove8.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove8.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove8.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove8.wav"));
 		break;
 	case	9:
-		PRECACHE_SOUND ("doors/doormove9.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove9.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove9.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove9.wav"));
 		break;
 	case	10:
-		PRECACHE_SOUND ("doors/doormove10.wav");
-		pev->noiseMoving = MAKE_STRING("doors/doormove10.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove10.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove10.wav"));
 		break;
 	default:
 		pev->noiseMoving = MAKE_STRING("common/null.wav");
@@ -543,36 +543,36 @@ void CBaseDoor::Precache( void )
 		pev->noiseArrived = MAKE_STRING("common/null.wav");
 		break;
 	case	1:
-		PRECACHE_SOUND ("doors/doorstop1.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop1.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop1.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop1.wav"));
 		break;
 	case	2:
-		PRECACHE_SOUND ("doors/doorstop2.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop2.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop2.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop2.wav"));
 		break;
 	case	3:
-		PRECACHE_SOUND ("doors/doorstop3.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop3.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop3.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop3.wav"));
 		break;
 	case	4:
-		PRECACHE_SOUND ("doors/doorstop4.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop4.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop4.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop4.wav"));
 		break;
 	case	5:
-		PRECACHE_SOUND ("doors/doorstop5.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop5.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop5.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop5.wav"));
 		break;
 	case	6:
-		PRECACHE_SOUND ("doors/doorstop6.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop6.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop6.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop6.wav"));
 		break;
 	case	7:
-		PRECACHE_SOUND ("doors/doorstop7.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop7.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop7.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop7.wav"));
 		break;
 	case	8:
-		PRECACHE_SOUND ("doors/doorstop8.wav");
-		pev->noiseArrived = MAKE_STRING("doors/doorstop8.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop8.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop8.wav"));
 		break;
 	default:
 		pev->noiseArrived = MAKE_STRING("common/null.wav");
@@ -1251,36 +1251,44 @@ void CMomentaryDoor::Precache( void )
 		pev->noiseMoving = ALLOC_STRING("common/null.wav");
 		break;
 	case	1:
-		PRECACHE_SOUND ("doors/doormove1.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove1.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove1.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove1.wav"));
 		break;
 	case	2:
-		PRECACHE_SOUND ("doors/doormove2.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove2.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove2.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove2.wav"));
 		break;
 	case	3:
-		PRECACHE_SOUND ("doors/doormove3.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove3.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove3.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove3.wav"));
 		break;
 	case	4:
-		PRECACHE_SOUND ("doors/doormove4.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove4.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove4.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove4.wav"));
 		break;
 	case	5:
-		PRECACHE_SOUND ("doors/doormove5.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove5.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove5.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove5.wav"));
 		break;
 	case	6:
-		PRECACHE_SOUND ("doors/doormove6.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove6.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove6.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove6.wav"));
 		break;
 	case	7:
-		PRECACHE_SOUND ("doors/doormove7.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove7.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove7.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove7.wav"));
 		break;
 	case	8:
-		PRECACHE_SOUND ("doors/doormove8.wav");
-		pev->noiseMoving = ALLOC_STRING("doors/doormove8.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doormove8.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove8.wav"));
+		break;
+	case	9:
+		PRECACHE_SOUND(DOOR_PATH("/doormove9.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove9.wav"));
+		break;
+	case	10:
+		PRECACHE_SOUND(DOOR_PATH("/doormove10.wav"));
+		pev->noiseMoving = MAKE_STRING(DOOR_PATH("/doormove10.wav"));
 		break;
 	default:
 		pev->noiseMoving = ALLOC_STRING("common/null.wav");
@@ -1295,36 +1303,36 @@ void CMomentaryDoor::Precache( void )
 		pev->noiseArrived = ALLOC_STRING("common/null.wav");
 		break;
 	case	1:
-		PRECACHE_SOUND ("doors/doorstop1.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop1.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop1.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop1.wav"));
 		break;
 	case	2:
-		PRECACHE_SOUND ("doors/doorstop2.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop2.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop2.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop2.wav"));
 		break;
 	case	3:
-		PRECACHE_SOUND ("doors/doorstop3.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop3.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop3.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop3.wav"));
 		break;
 	case	4:
-		PRECACHE_SOUND ("doors/doorstop4.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop4.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop4.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop4.wav"));
 		break;
 	case	5:
-		PRECACHE_SOUND ("doors/doorstop5.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop5.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop5.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop5.wav"));
 		break;
 	case	6:
-		PRECACHE_SOUND ("doors/doorstop6.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop6.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop6.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop6.wav"));
 		break;
 	case	7:
-		PRECACHE_SOUND ("doors/doorstop7.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop7.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop7.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop7.wav"));
 		break;
 	case	8:
-		PRECACHE_SOUND ("doors/doorstop8.wav");
-		pev->noiseArrived = ALLOC_STRING("doors/doorstop8.wav");
+		PRECACHE_SOUND(DOOR_PATH("/doorstop8.wav"));
+		pev->noiseArrived = MAKE_STRING(DOOR_PATH("/doorstop8.wav"));
 		break;
 	default:
 		pev->noiseArrived = ALLOC_STRING("common/null.wav");
