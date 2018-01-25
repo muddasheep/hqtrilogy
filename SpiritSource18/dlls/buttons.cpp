@@ -827,30 +827,30 @@ char *ButtonSound( int sound )
 	switch ( sound )
 	{
 		case 0: pszSound = "common/null.wav";        break;
-		case 1: pszSound = button_path("/button1.wav");	break;
-		case 2: pszSound = button_path("/button2.wav");	break;
-		case 3: pszSound = button_path("/button3.wav");	break;
-		case 4: pszSound = button_path("/button4.wav");	break;
-		case 5: pszSound = button_path("/button5.wav");	break;
-		case 6: pszSound = button_path("/button6.wav");	break;
-		case 7: pszSound = button_path("/button7.wav");	break;
-		case 8: pszSound = button_path("/button8.wav");	break;
-		case 9: pszSound = button_path("/button9.wav");	break;
-		case 10: pszSound = button_path("/button10.wav");	break;
-		case 11: pszSound = button_path("/button11.wav");	break;
-		case 12: pszSound = button_path("/latchlocked1.wav");	break;
-		case 13: pszSound = button_path("/latchunlocked1.wav");	break;
-		case 14: pszSound = button_path("/lightswitch2.wav"); break;
+		case 1: pszSound = BUTTON_PATH("/button1.wav");	break;
+		case 2: pszSound = BUTTON_PATH("/button2.wav");	break;
+		case 3: pszSound = BUTTON_PATH("/button3.wav");	break;
+		case 4: pszSound = BUTTON_PATH("/button4.wav");	break;
+		case 5: pszSound = BUTTON_PATH("/button5.wav");	break;
+		case 6: pszSound = BUTTON_PATH("/button6.wav");	break;
+		case 7: pszSound = BUTTON_PATH("/button7.wav");	break;
+		case 8: pszSound = BUTTON_PATH("/button8.wav");	break;
+		case 9: pszSound = BUTTON_PATH("/button9.wav");	break;
+		case 10: pszSound = BUTTON_PATH("/button10.wav");	break;
+		case 11: pszSound = BUTTON_PATH("/button11.wav");	break;
+		case 12: pszSound = BUTTON_PATH("/latchlocked1.wav");	break;
+		case 13: pszSound = BUTTON_PATH("/latchunlocked1.wav");	break;
+		case 14: pszSound = BUTTON_PATH("/lightswitch2.wav"); break;
 
 			// next 6 slots reserved for any additional sliding button sounds we may add
 
-		case 21: pszSound = button_path("/lever1.wav");	break;
-		case 22: pszSound = button_path("/lever2.wav");	break;
-		case 23: pszSound = button_path("/lever3.wav");	break;
-		case 24: pszSound = button_path("/lever4.wav");	break;
-		case 25: pszSound = button_path("/lever5.wav");	break;
+		case 21: pszSound = BUTTON_PATH("/lever1.wav");	break;
+		case 22: pszSound = BUTTON_PATH("/lever2.wav");	break;
+		case 23: pszSound = BUTTON_PATH("/lever3.wav");	break;
+		case 24: pszSound = BUTTON_PATH("/lever4.wav");	break;
+		case 25: pszSound = BUTTON_PATH("/lever5.wav");	break;
 
-		default:pszSound = button_path("/button9.wav");	break;
+		default:pszSound = BUTTON_PATH("/button9.wav");	break;
 	}
 
 	return pszSound;
@@ -868,12 +868,12 @@ void DoSpark(entvars_t *pev, const Vector &location )
 	float flVolume = RANDOM_FLOAT ( 0.25 , 0.75 ) * 0.4;//random volume range
 	switch ( (int)(RANDOM_FLOAT(0,1) * 6) )
 	{
-		case 0: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark1.wav"), flVolume, ATTN_NORM);	break;
-		case 1: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark2.wav"), flVolume, ATTN_NORM);	break;
-		case 2: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark3.wav"), flVolume, ATTN_NORM);	break;
-		case 3: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark4.wav"), flVolume, ATTN_NORM);	break;
-		case 4: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark5.wav"), flVolume, ATTN_NORM);	break;
-		case 5: EMIT_SOUND(ENT(pev), CHAN_VOICE, button_path("/spark6.wav"), flVolume, ATTN_NORM);	break;
+		case 0: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark1.wav"), flVolume, ATTN_NORM);	break;
+		case 1: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark2.wav"), flVolume, ATTN_NORM);	break;
+		case 2: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark3.wav"), flVolume, ATTN_NORM);	break;
+		case 3: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark4.wav"), flVolume, ATTN_NORM);	break;
+		case 4: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark5.wav"), flVolume, ATTN_NORM);	break;
+		case 5: EMIT_SOUND(ENT(pev), CHAN_VOICE, BUTTON_PATH("/spark6.wav"), flVolume, ATTN_NORM);	break;
 	}
 }
 
