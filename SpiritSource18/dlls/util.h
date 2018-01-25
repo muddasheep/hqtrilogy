@@ -581,8 +581,10 @@ CBaseEntity* UTIL_FollowReference( CBaseEntity* pStartEntity, const char* szName
 // for trigger_viewset
 int HaveCamerasInPVS( edict_t* edict );
 
-char * con(const char * first, const char * second);
-char *button_path(char * filename);
-
 // to determine the current halfquake part
-char * halfquake_part();
+int halfquake_part();
+
+// Creates string containing the full path to the sound depending on the hq part
+// Exapmle: BUTTON_PATH("/button1.wav") will create "buttons/hq1/button1.wav", "buttons/hq2/button1.wav" or "buttons/hq3/button1.wav" depending on the hq part
+// IT ACCEPTS ONLY LITERAL STRINGS! I.e. no BUTTON_PATH(sound) where 'sound' is some variable
+#define BUTTON_PATH(FILENAME) ( (halfquake_part()==1) ? "buttons/hq1" FILENAME  : ((halfquake_part()==2) ? "buttons/hq2" FILENAME : "buttons/hq3" FILENAME) )

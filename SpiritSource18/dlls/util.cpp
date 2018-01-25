@@ -1058,47 +1058,17 @@ void UTIL_ScreenFade( CBaseEntity *pEntity, const Vector &color, float fadeTime,
 	UTIL_ScreenFadeWrite( fade, pEntity );
 }
 
-char * halfquake_part() {
-	std::string s = STRING(gpGlobals->mapname);
+int halfquake_part() {
+	std::string s(STRING(gpGlobals->mapname));
 	if (s.find("hq2_") != std::string::npos) {
-		char * c = "hq2";
-		return c;
+		return 2;
 	}
 
 	if (s.find("hq3_") != std::string::npos) {
-		char * c = "hq3";
-		return c;
+		return 3;
 	}
 
-	char * c = "hq1";
-	return c;
-}
-
-char * con(const char * first, const char * second) {
-	int l1 = 0, l2 = 0;
-	const char * f = first, *l = second;
-
-	// step 1 - find lengths (you can also use strlen)
-	while (*f++) ++l1;
-	while (*l++) ++l2;
-
-	char *result = new char[l1 + l2];
-
-	// then concatenate
-	for (int i = 0; i < l1; i++) result[i] = first[i];
-	for (int i = l1; i < l1 + l2; i++) result[i] = second[i - l1];
-
-	// finally, "cap" result with terminating null char
-	result[l1 + l2] = '\0';
-	return result;
-}
-
-char *button_path(char * filename) {
-	char * path = halfquake_part();
-	char * complete_path = "buttons/";
-	complete_path = con(complete_path, path);
-	complete_path = con(complete_path, filename);
-	return complete_path;
+	return 1;
 }
 
 void UTIL_HudMessage( CBaseEntity *pEntity, const hudtextparms_t &textparms, const char *pMessage )
