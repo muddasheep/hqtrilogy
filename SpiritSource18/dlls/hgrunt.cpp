@@ -2641,7 +2641,7 @@ void CVictimGrunt::Spawn()
 	SET_MODEL(ENT(pev), "models/victim_grunt.mdl");
 	UTIL_SetSize(pev, VEC_HUMAN_HULL_MIN, VEC_HUMAN_HULL_MAX);
 
-	pev->health = 20000;
+	pev->health = 50000;
 }
 
 //=========================================================

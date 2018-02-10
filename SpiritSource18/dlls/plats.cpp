@@ -192,86 +192,86 @@ void CBasePlatTrain::Precache( void )
 		switch (m_bMoveSnd)
 		{
 		case	1:
-			pev->noiseMoving = MAKE_STRING("plats/bigmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/bigmove1.wav"));
 			break;
 		case	2:
-			pev->noiseMoving = MAKE_STRING("plats/bigmove2.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/bigmove2.wav"));
 			break;
 		case	3:
-			pev->noiseMoving = MAKE_STRING("plats/elevmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/elevmove1.wav"));
 			break;
 		case	4:
-			pev->noiseMoving = MAKE_STRING("plats/elevmove2.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/elevmove2.wav"));
 			break;
 		case	5:
-			pev->noiseMoving = MAKE_STRING("plats/elevmove3.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/elevmove3.wav"));
 			break;
 		case	6:
-			pev->noiseMoving = MAKE_STRING("plats/freightmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/freightmove1.wav"));
 			break;
 		case	7:
-			pev->noiseMoving = MAKE_STRING("plats/freightmove2.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/freightmove2.wav"));
 			break;
 		case	8:
-			pev->noiseMoving = MAKE_STRING("plats/heavymove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/heavymove1.wav"));
 			break;
 		case	9:
-			pev->noiseMoving = MAKE_STRING("plats/rackmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/rackmove1.wav"));
 			break;
 		case	10:
-			pev->noiseMoving = MAKE_STRING("plats/railmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/railmove1.wav"));
 			break;
 		case	11:
-			pev->noiseMoving = MAKE_STRING("plats/squeekmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/squeekmove1.wav"));
 			break;
 		case	12:
-			pev->noiseMoving = MAKE_STRING("plats/talkmove1.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/talkmove1.wav"));
 			break;
 		case	13:
-			pev->noiseMoving = MAKE_STRING("plats/talkmove2.wav");
+			pev->noiseMoving = MAKE_STRING(TRAIN_PATH("/talkmove2.wav"));
 			break;
 		default:
 			pev->noiseMoving = MAKE_STRING("common/null.wav");
 			break;
 		}
 	}
-	PRECACHE_SOUND ((char*)STRING(pev->noiseMoving));
+	PRECACHE_SOUND((char*)STRING(pev->noiseMoving));
 
-// set the plat's 'reached destination' stop sound
+	// set the plat's 'reached destination' stop sound
 	if (FStringNull(pev->noiseArrived))
 	{
 		switch (m_bStopSnd)
 		{
 		case	1:
-			pev->noiseArrived = MAKE_STRING("plats/bigstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/bigstop1.wav"));
 			break;
 		case	2:
-			pev->noiseArrived = MAKE_STRING("plats/bigstop2.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/bigstop2.wav"));
 			break;
 		case	3:
-			pev->noiseArrived = MAKE_STRING("plats/freightstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/freightstop1.wav"));
 			break;
 		case	4:
-			pev->noiseArrived = MAKE_STRING("plats/heavystop2.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/heavystop2.wav"));
 			break;
 		case	5:
-			pev->noiseArrived = MAKE_STRING("plats/rackstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/rackstop1.wav"));
 			break;
 		case	6:
-			pev->noiseArrived = MAKE_STRING("plats/railstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/railstop1.wav"));
 			break;
 		case	7:
-			pev->noiseArrived = MAKE_STRING("plats/squeekstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/squeekstop1.wav"));
 			break;
 		case	8:
-			pev->noiseArrived = MAKE_STRING("plats/talkstop1.wav");
+			pev->noiseArrived = MAKE_STRING(TRAIN_PATH("/talkstop1.wav"));
 			break;
 		default:
 			pev->noiseArrived = MAKE_STRING("common/null.wav");
 			break;
 		}
 	}
-	PRECACHE_SOUND ((char*)STRING(pev->noiseArrived));
+	PRECACHE_SOUND((char*)STRING(pev->noiseArrived));
 }
 
 //
@@ -1420,19 +1420,19 @@ void CFuncTrackTrain :: Precache( void )
 	default:
 		//pev->noise = 0; LRC - allow custom sounds to be set in worldcraft.
 		break;
-	case 1: pev->noise = MAKE_STRING("plats/ttrain1.wav");break;
-	case 2: pev->noise = MAKE_STRING("plats/ttrain2.wav");break;
-	case 3: pev->noise = MAKE_STRING("plats/ttrain3.wav");break; 
-	case 4: pev->noise = MAKE_STRING("plats/ttrain4.wav");break;
-	case 5: pev->noise = MAKE_STRING("plats/ttrain6.wav");break;
-	case 6: pev->noise = MAKE_STRING("plats/ttrain7.wav");break;
+	case 1: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain1.wav"));break;
+	case 2: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain2.wav"));break;
+	case 3: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain3.wav"));break;
+	case 4: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain4.wav"));break;
+	case 5: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain6.wav"));break;
+	case 6: pev->noise = MAKE_STRING(TRAIN_PATH("/ttrain7.wav"));break;
 	}
 
 	if (FStringNull(pev->noise1))
-		pev->noise1 = MAKE_STRING("plats/ttrain_brake1.wav");
+		pev->noise1 = MAKE_STRING(TRAIN_PATH("/ttrain_brake1.wav"));
 
 	if (FStringNull(pev->noise2))
-		pev->noise2 = MAKE_STRING("plats/ttrain_start1.wav");
+		pev->noise2 = MAKE_STRING(TRAIN_PATH("/ttrain_start1.wav"));
 
 	if (pev->noise)
 		PRECACHE_SOUND((char*)STRING(pev->noise)); //LRC
@@ -2351,7 +2351,7 @@ void CFuncTrackChange :: Spawn( void )
 void CFuncTrackChange :: Precache( void )
 {
 	// Can't trigger sound
-	PRECACHE_SOUND( "buttons/button11.wav" );
+	PRECACHE_SOUND( BUTTON_PATH("/button11.wav") );
 	
 	CFuncPlatRot::Precache();
 }

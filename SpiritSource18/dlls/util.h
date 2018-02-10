@@ -589,3 +589,4 @@ int halfquake_part();
 // IT ACCEPTS ONLY LITERAL STRINGS! I.e. no BUTTON_PATH(sound) where 'sound' is some variable
 #define BUTTON_PATH(FILENAME) ( (halfquake_part()==1) ? "buttons/hq1" FILENAME  : ((halfquake_part()==2) ? "buttons/hq2" FILENAME : "buttons/hq3" FILENAME) )
 #define DOOR_PATH(FILENAME)   ( (halfquake_part()==1) ? "doors/hq1" FILENAME    : ((halfquake_part()==2) ? "doors/hq2"   FILENAME : "doors/hq3" FILENAME) )
+#define TRAIN_PATH(FILENAME)  ( (halfquake_part()==1) ? "plats/hq1" FILENAME    : ((halfquake_part()==2) ? "plats/hq2"   FILENAME : "plats/hq3" FILENAME) )
