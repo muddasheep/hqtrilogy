@@ -587,6 +587,7 @@ int halfquake_part();
 // Creates string containing the full path to the sound depending on the hq part
 // Exapmle: BUTTON_PATH("/button1.wav") will create "buttons/hq1/button1.wav", "buttons/hq2/button1.wav" or "buttons/hq3/button1.wav" depending on the hq part
 // IT ACCEPTS ONLY LITERAL STRINGS! I.e. no BUTTON_PATH(sound) where 'sound' is some variable
-#define BUTTON_PATH(FILENAME) ( (halfquake_part()==1) ? "buttons/hq1" FILENAME  : ((halfquake_part()==2) ? "buttons/hq2" FILENAME : "buttons/hq3" FILENAME) )
-#define DOOR_PATH(FILENAME)   ( (halfquake_part()==1) ? "doors/hq1" FILENAME    : ((halfquake_part()==2) ? "doors/hq2"   FILENAME : "doors/hq3" FILENAME) )
-#define TRAIN_PATH(FILENAME)  ( (halfquake_part()==1) ? "plats/hq1" FILENAME    : ((halfquake_part()==2) ? "plats/hq2"   FILENAME : "plats/hq3" FILENAME) )
+#define BUTTON_PATH(FILENAME)    ( (halfquake_part()==1) ? "buttons/hq1" FILENAME  : ((halfquake_part()==2) ? "buttons/hq2" FILENAME : "buttons/hq3" FILENAME) )
+#define DOOR_PATH(FILENAME)      ( (halfquake_part()==1) ? "doors/hq1" FILENAME    : ((halfquake_part()==2) ? "doors/hq2"   FILENAME : "doors/hq3" FILENAME) )
+#define TRAIN_PATH(FILENAME)     ( (halfquake_part()==1) ? "plats/hq1" FILENAME    : ((halfquake_part()==2) ? "plats/hq2"   FILENAME : "plats/hq3" FILENAME) )
+#define EXPLOSION_PATH(FILENAME) ( (halfquake_part()==1) ? "sprites/hq1" FILENAME  : ((halfquake_part()==2) ? "sprites/hq2" FILENAME : "sprites/hq3" FILENAME) )

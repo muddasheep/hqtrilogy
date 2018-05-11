@@ -20,7 +20,6 @@
 
 */
 
-#include <string>         // std::string
 #include "extdll.h"
 #include "util.h"
 #include "cbase.h"

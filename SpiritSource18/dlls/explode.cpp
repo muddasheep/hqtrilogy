@@ -146,6 +146,8 @@ void CEnvExplosion::Spawn( void )
 	}
 
 	m_spriteScale = (int)flSpriteScale;
+
+//	g_sModelIndexFireball = PRECACHE_MODEL(EXPLOSION_PATH("/zerogxplode.spr"));// fireball
 }
 
 void CEnvExplosion::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value )
