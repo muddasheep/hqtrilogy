@@ -591,3 +591,4 @@ int halfquake_part();
 #define DOOR_PATH(FILENAME)      ( (halfquake_part()==1) ? "doors/hq1" FILENAME    : ((halfquake_part()==2) ? "doors/hq2"   FILENAME : "doors/hq3" FILENAME) )
 #define TRAIN_PATH(FILENAME)     ( (halfquake_part()==1) ? "plats/hq1" FILENAME    : ((halfquake_part()==2) ? "plats/hq2"   FILENAME : "plats/hq3" FILENAME) )
 #define EXPLOSION_PATH(FILENAME) ( (halfquake_part()==1) ? "sprites/hq1" FILENAME  : ((halfquake_part()==2) ? "sprites/hq2" FILENAME : "sprites/hq3" FILENAME) )
+#define WEAPON_PATH(FILENAME)    ( (halfquake_part()==1) ? "weapons/hq1" FILENAME  : ((halfquake_part()==2) ? "weapons/hq2" FILENAME : "weapons/hq3" FILENAME) )
