@@ -1,0 +1,14 @@
+// overview description file for crossfire.bsp
+
+global 
+{
+	ZOOM	1.90
+	ORIGIN	-108 	-604	-1890
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/crossfire.bmp"
+	HEIGHT	-1890
+}

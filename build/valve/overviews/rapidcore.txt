@@ -1,0 +1,14 @@
+// overview description file for rapidcore.bsp
+
+global 
+{
+	ZOOM	2.20
+	ORIGIN	-322 	-344	-333
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/rapidcore.bmp"
+	HEIGHT	-333
+}

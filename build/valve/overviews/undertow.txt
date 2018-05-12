@@ -1,0 +1,14 @@
+// overview description file for undertow.bsp
+
+global 
+{
+	ZOOM	1.9
+	ORIGIN	-352 	64	-640
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/undertow.bmp"
+	HEIGHT	-640
+}

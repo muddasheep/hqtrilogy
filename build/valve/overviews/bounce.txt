@@ -1,0 +1,14 @@
+// overview description file for bounce.bsp
+
+global 
+{
+	ZOOM	1.39
+	ORIGIN	-1216 	573	-2480
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/bounce.bmp"
+	HEIGHT	-2480
+}

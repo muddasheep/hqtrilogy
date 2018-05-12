@@ -1,0 +1,8 @@
+// 'M' Metal/Grate
+// 'T' Wood/Tile
+// 'G' Carpet/Grass
+// 'V' Vent (Silent)
+
+v white
+v black
+v BLACK

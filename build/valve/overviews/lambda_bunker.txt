@@ -1,0 +1,14 @@
+// overview description file for lambda_bunker.bsp
+
+global 
+{
+	ZOOM	1.99
+	ORIGIN	-980 	-484	-160
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/lambda_bunker.bmp"
+	HEIGHT	-160
+}

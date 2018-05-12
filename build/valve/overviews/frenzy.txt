@@ -1,0 +1,14 @@
+// overview description file for frenzy.bsp
+
+global 
+{
+	ZOOM	2.98
+	ORIGIN	-272 	0	0
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/frenzy.bmp"
+	HEIGHT	0
+}

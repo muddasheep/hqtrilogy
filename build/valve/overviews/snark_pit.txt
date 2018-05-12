@@ -1,0 +1,14 @@
+// overview description file for snark_pit.bsp
+
+global 
+{
+	ZOOM	3.72
+	ORIGIN	232 	-504	-545
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/snark_pit.bmp"
+	HEIGHT	-545
+}

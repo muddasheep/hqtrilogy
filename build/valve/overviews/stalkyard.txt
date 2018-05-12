@@ -1,0 +1,14 @@
+// overview description file for stalkyard.bsp
+
+global 
+{
+	ZOOM	3.22
+	ORIGIN	-16 	552	0
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/stalkyard.bmp"
+	HEIGHT	0
+}

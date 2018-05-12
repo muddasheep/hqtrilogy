@@ -1,0 +1,14 @@
+// overview description file for datacore.bsp
+
+global 
+{
+	ZOOM	2.78
+	ORIGIN	-2258 	2338	720
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/datacore.bmp"
+	HEIGHT	720
+}

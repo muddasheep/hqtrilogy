@@ -1,0 +1,25 @@
+// Server Lists
+//
+
+Auth
+{
+	207.173.177.10:7002
+//	half-life.east.won.net:7002 
+//	half-life.west.won.net:7002
+//	half-life.central.won.net:7002
+}
+
+Master
+{
+	207.173.177.10:27010
+//	half-life.east.won.net:27010 
+//	half-life.west.won.net:27010
+//	half-life.central.won.net:27010	
+}
+
+Secure
+{
+	half-life.speakeasy-nyc.hlauth.net:27012
+	half-life.speakeasy-sea.hlauth.net:27012
+	half-life.speakeasy-chi.hlauth.net:27012
+}
