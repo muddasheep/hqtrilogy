@@ -313,7 +313,7 @@ void PM_PlayGroupSound( const char* szValue, int irand, float fvol )
 	pmove->PM_PlaySound( CHAN_BODY, szValue, fvol, ATTN_NORM, 0, PITCH_NORM );
 }
 
-void PM_PlayStepSound( int step, float fvol )
+void PM_PlayStepSound(int step, float fvol)
 {
 	static int iSkipStep = 0;
 	int irand;
@@ -323,31 +323,39 @@ void PM_PlayStepSound( int step, float fvol )
 
 	pmove->iStepLeft = !pmove->iStepLeft;
 
-	if ( !pmove->runfuncs )
+	if (!pmove->runfuncs)
 	{
 		return;
 	}
-	
-	irand = pmove->RandomLong(0,1) + ( pmove->iStepLeft * 2 );
+
+	irand = pmove->RandomLong(0, 1) + (pmove->iStepLeft * 2);
 
 	// FIXME mp_footsteps needs to be a movevar
-	if ( pmove->multiplayer && !pmove->movevars->footsteps )
+	if (pmove->multiplayer && !pmove->movevars->footsteps)
 		return;
 
-	VectorCopy( pmove->velocity, hvel );
+	VectorCopy(pmove->velocity, hvel);
 	hvel[2] = 0.0;
 
-	if ( pmove->multiplayer && ( !g_onladder && Length( hvel ) <= 220 ) )
+	if (pmove->multiplayer && (!g_onladder && Length(hvel) <= 220))
 		return;
 
 	//LRC - custom footstep sounds
 	switch ( step )
 	{
 	case STEP_LADDER:
-		szValue = pmove->PM_Info_ValueForKey( pmove->physinfo, "lsnd" );
+		szValue = pmove->PM_Info_ValueForKey(pmove->physinfo, "ladderhq");
 		if (szValue[0] && szValue[1])
 		{
-			PM_PlayGroupSound( szValue, irand, fvol );
+			PM_PlayGroupSound(szValue, irand, fvol);
+			return;
+		}
+		break;
+	case STEP_VENT:
+		szValue = pmove->PM_Info_ValueForKey(pmove->physinfo, "venthq");
+		if (szValue[0] && szValue[1])
+		{
+			PM_PlayGroupSound(szValue, irand, fvol);
 			return;
 		}
 		break;
@@ -374,7 +382,7 @@ void PM_PlayStepSound( int step, float fvol )
 		}
 		break;
 	default:
-		szValue = pmove->PM_Info_ValueForKey( pmove->physinfo, "ssnd" );
+		szValue = pmove->PM_Info_ValueForKey( pmove->physinfo, "hq" );
 		if (szValue[0] && szValue[1])
 		{
 			PM_PlayGroupSound( szValue, irand, fvol );
@@ -497,6 +505,14 @@ void PM_PlayStepSound( int step, float fvol )
 		}
 		break;
 	case STEP_LADDER:
+		szValue = pmove->PM_Info_ValueForKey(pmove->physinfo, "ladderhq");
+		if (szValue[0] && szValue[1])
+		{
+			PM_PlayGroupSound(szValue, irand, fvol);
+			return;
+		}
+		break;
+		/*
 		switch(irand)
 		{
 		// right foot
@@ -507,6 +523,7 @@ void PM_PlayStepSound( int step, float fvol )
 		case 3:	pmove->PM_PlaySound( CHAN_BODY, "player/pl_ladder4.wav", fvol, ATTN_NORM, 0, PITCH_NORM );	break;
 		}
 		break;
+		*/
 	}
 }	
 

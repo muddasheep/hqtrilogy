@@ -42,9 +42,10 @@
     <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\Debug\</OutDir>
-    <IntDir>.\Debug\</IntDir>
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>client</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\Release\</OutDir>
@@ -90,7 +91,7 @@ copy "$(TargetDir)"client.dll "C:\games\half-life\spirit\cl_dlls\client 1.8a1.dl
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;../utils/vgui/lib/win32_vc6/vgui.lib;wsock32.lib;opengl32.lib;../common/cg/cg.lib;../common/cg/cgGL.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>.\Debug\client.dll</OutputFile>
+      <OutputFile>.\Release\client.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/client.pdb</ProgramDatabaseFile>
