@@ -3088,6 +3088,10 @@ void CBasePlayer::Spawn( void )
 */
 	g_engfuncs.pfnSetPhysicsKeyValue( edict(), "slj", "0" );
 	g_engfuncs.pfnSetPhysicsKeyValue( edict(), "hl", "1" );
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "hq", FOOTSTEP_PATH("/pl_step?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "ladderhq", PLAYER_PATH("/pl_ladder?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "venthq", PLAYER_PATH("/pl_duct?.wav"));
+
 
 	pev->fov = m_iFOV				= 0;// init field of view.
 	m_iClientFOV		= -1; // make sure fov reset is sent
@@ -3504,7 +3508,7 @@ void CSprayCan::Spawn ( entvars_t *pevOwner )
 	pev->frame = 0;
 
 	SetNextThink( 0.1 );
-	EMIT_SOUND(ENT(pev), CHAN_VOICE, "player/sprayer.wav", 1, ATTN_NORM);
+	EMIT_SOUND(ENT(pev), CHAN_VOICE, PLAYER_PATH("/sprayer.wav"), 1, ATTN_NORM);
 }
 
 void CSprayCan::Think( void )

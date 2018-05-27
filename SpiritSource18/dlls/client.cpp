@@ -789,14 +789,19 @@ void StartFrame( void )
 void ClientPrecache( void )
 {
 	// setup precaches always needed
-	PRECACHE_SOUND("player/sprayer.wav");			// spray paint sound for PreAlpha
+	PRECACHE_SOUND(PLAYER_PATH("/sprayer.wav"));			// spray paint sound for PreAlpha
 
 	// PRECACHE_SOUND("player/pl_jumpland2.wav");		// UNDONE: play 2x step sound
 
 	PRECACHE_SOUND("player/pl_fallpain2.wav");
 	PRECACHE_SOUND("player/pl_fallpain3.wav");
 
-	PRECACHE_SOUND("player/pl_step1.wav");		// walk on concrete
+	PRECACHE_SOUND(PLAYER_PATH("/pl_step1.wav"));		// walk on concrete
+	PRECACHE_SOUND(PLAYER_PATH("/pl_step2.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_step3.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_step4.wav"));
+
+	PRECACHE_SOUND("player/pl_step1.wav");
 	PRECACHE_SOUND("player/pl_step2.wav");
 	PRECACHE_SOUND("player/pl_step3.wav");
 	PRECACHE_SOUND("player/pl_step4.wav");
@@ -816,10 +821,10 @@ void ClientPrecache( void )
 	PRECACHE_SOUND("player/pl_dirt3.wav");
 	PRECACHE_SOUND("player/pl_dirt4.wav");
 
-	PRECACHE_SOUND("player/pl_duct1.wav");		// walk in duct
-	PRECACHE_SOUND("player/pl_duct2.wav");
-	PRECACHE_SOUND("player/pl_duct3.wav");
-	PRECACHE_SOUND("player/pl_duct4.wav");
+	PRECACHE_SOUND(PLAYER_PATH("/pl_duct1.wav"));		// walk in duct
+	PRECACHE_SOUND(PLAYER_PATH("/pl_duct2.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_duct3.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_duct4.wav"));
 
 	PRECACHE_SOUND("player/pl_grate1.wav");		// walk on grate
 	PRECACHE_SOUND("player/pl_grate2.wav");
@@ -842,10 +847,10 @@ void ClientPrecache( void )
 	PRECACHE_SOUND("player/pl_swim3.wav");
 	PRECACHE_SOUND("player/pl_swim4.wav");
 
-	PRECACHE_SOUND("player/pl_ladder1.wav");	// climb ladder rung
-	PRECACHE_SOUND("player/pl_ladder2.wav");
-	PRECACHE_SOUND("player/pl_ladder3.wav");
-	PRECACHE_SOUND("player/pl_ladder4.wav");
+	PRECACHE_SOUND(PLAYER_PATH("/pl_ladder1.wav"));	// climb ladder rung
+	PRECACHE_SOUND(PLAYER_PATH("/pl_ladder2.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_ladder3.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_ladder4.wav"));
 
 	PRECACHE_SOUND("player/pl_wade1.wav");		// wade in water
 	PRECACHE_SOUND("player/pl_wade2.wav");
