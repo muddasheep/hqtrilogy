@@ -793,8 +793,8 @@ void ClientPrecache( void )
 
 	// PRECACHE_SOUND("player/pl_jumpland2.wav");		// UNDONE: play 2x step sound
 
-	PRECACHE_SOUND("player/pl_fallpain2.wav");
-	PRECACHE_SOUND("player/pl_fallpain3.wav");
+	PRECACHE_SOUND(PLAYER_PATH("/pl_fallpain2.wav"));
+	PRECACHE_SOUND(PLAYER_PATH("/pl_fallpain3.wav"));
 
 	PRECACHE_SOUND(PLAYER_PATH("/pl_step1.wav"));		// walk on concrete
 	PRECACHE_SOUND(PLAYER_PATH("/pl_step2.wav"));

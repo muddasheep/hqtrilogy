@@ -3091,6 +3091,7 @@ void CBasePlayer::Spawn( void )
 	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "hq", FOOTSTEP_PATH("/pl_step?.wav"));
 	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "ladderhq", PLAYER_PATH("/pl_ladder?.wav"));
 	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "venthq", PLAYER_PATH("/pl_duct?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "painhq", PLAYER_PATH("/pl_fallpain3.wav"));
 
 
 	pev->fov = m_iFOV				= 0;// init field of view.
