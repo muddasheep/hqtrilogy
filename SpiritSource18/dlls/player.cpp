@@ -306,7 +306,12 @@ void LinkUserMessages( void )
 
 LINK_ENTITY_TO_CLASS( player, CBasePlayer );
 
-
+void CBasePlayer::UpdateHQSounds() {
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "hq", FOOTSTEP_PATH("/pl_step?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "ladderhq", PLAYER_PATH("/pl_ladder?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "venthq", PLAYER_PATH("/pl_duct?.wav"));
+	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "painhq", PLAYER_PATH("/pl_fallpain3.wav"));
+}
 
 void CBasePlayer :: Pain( void )
 {
@@ -3088,11 +3093,7 @@ void CBasePlayer::Spawn( void )
 */
 	g_engfuncs.pfnSetPhysicsKeyValue( edict(), "slj", "0" );
 	g_engfuncs.pfnSetPhysicsKeyValue( edict(), "hl", "1" );
-	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "hq", FOOTSTEP_PATH("/pl_step?.wav"));
-	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "ladderhq", PLAYER_PATH("/pl_ladder?.wav"));
-	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "venthq", PLAYER_PATH("/pl_duct?.wav"));
-	g_engfuncs.pfnSetPhysicsKeyValue(edict(), "painhq", PLAYER_PATH("/pl_fallpain3.wav"));
-
+	UpdateHQSounds();
 
 	pev->fov = m_iFOV				= 0;// init field of view.
 	m_iClientFOV		= -1; // make sure fov reset is sent
@@ -3300,10 +3301,10 @@ int CBasePlayer::Restore( CRestore &restore )
 	m_flNextAttack = UTIL_WeaponTimeBase();
 #endif
 
+	UpdateHQSounds();
+
 	return status;
 }
-
-
 
 void CBasePlayer::SelectNextItem( int iItem )
 {
