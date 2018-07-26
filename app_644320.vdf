@@ -1,0 +1,15 @@
+"appbuild"
+{
+	"appid" "644320"
+	"desc" "Halfquake Trilogy"
+	"buildoutput" "H:\Eigene Dateien\Halfquake Trilogy Steam\steamworks_sdk_141\tools\ContentBuilder\output"
+	"contentroot" ""
+	"setlive" ""
+	"preview" "0"
+	"local"	""
+	"depots"
+	{
+		"644321"	"H:\Eigene Dateien\Halfquake Trilogy Steam\steamworks_sdk_141\tools\ContentBuilder\scripts\depot_644321.vdf"
+		"910930"	"H:\Eigene Dateien\Halfquake Trilogy Steam\steamworks_sdk_141\tools\ContentBuilder\scripts\depot_910930.vdf"
+	}
+}

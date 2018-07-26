@@ -1,0 +1,12 @@
+"DepotBuildConfig"
+{
+	"DepotID" "910930"
+
+	"FileMapping"
+	{
+		"LocalPath" "C:\Users\muddasheep\Documents\hqtrilogy\behind_the_death_scenes\*"
+		"DepotPath" "."
+		"recursive" "1"
+	}
+	"FileExclusion" "*.pdb"
+}

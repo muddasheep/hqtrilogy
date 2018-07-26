@@ -1,0 +1,12 @@
+"DepotBuildConfig"
+{
+	"DepotID" "644321"
+	"contentroot" "C:\Users\muddasheep\Documents\hqtrilogy\build"
+	"FileMapping"
+	{
+		"LocalPath" "*"
+		"DepotPath" "."
+		"recursive" "1"
+	}
+	"FileExclusion" "*.pdb"
+}
