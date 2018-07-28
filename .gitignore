@@ -15,6 +15,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+behind_the_death_scenes
 
 # External tool builders
 .externalToolBuilders/
