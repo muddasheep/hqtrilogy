@@ -598,24 +598,24 @@ void CFuncRotating :: Precache( void )
 		switch (m_sounds)
 		{
 		case 1:
-			PRECACHE_SOUND ("fans/fan1.wav");
-			pev->noiseRunning = MAKE_STRING("fans/fan1.wav");
+			PRECACHE_SOUND (FAN_PATH("/fan1.wav"));
+			pev->noiseRunning = MAKE_STRING(FAN_PATH("/fan1.wav"));
 			break;
 		case 2:
-			PRECACHE_SOUND ("fans/fan2.wav");
-			pev->noiseRunning = MAKE_STRING("fans/fan2.wav");
+			PRECACHE_SOUND (FAN_PATH("/fan2.wav"));
+			pev->noiseRunning = MAKE_STRING(FAN_PATH("/fan2.wav"));
 			break;
 		case 3:
-			PRECACHE_SOUND ("fans/fan3.wav");
-			pev->noiseRunning = MAKE_STRING("fans/fan3.wav");
+			PRECACHE_SOUND (FAN_PATH("/fan3.wav"));
+			pev->noiseRunning = MAKE_STRING(FAN_PATH("/fan3.wav"));
 			break;
 		case 4:
-			PRECACHE_SOUND ("fans/fan4.wav");
-			pev->noiseRunning = MAKE_STRING("fans/fan4.wav");
+			PRECACHE_SOUND (FAN_PATH("/fan4.wav"));
+			pev->noiseRunning = MAKE_STRING(FAN_PATH("/fan4.wav"));
 			break;
 		case 5:
-			PRECACHE_SOUND ("fans/fan5.wav");
-			pev->noiseRunning = MAKE_STRING("fans/fan5.wav");
+			PRECACHE_SOUND (FAN_PATH("/fan5.wav"));
+			pev->noiseRunning = MAKE_STRING(FAN_PATH("/fan5.wav"));
 			break;
 
 		case 0:
