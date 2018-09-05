@@ -77,7 +77,7 @@
        |- http://www.lupusrex.se
 
    ♦ Sea of Trees (music for HQ1)
-       |- https://seaoftreesmetal.bandcamp.com/
+       |- https://seaoftreesmetal.bandcamp.com
 
 [•]--------------------------------------------------------[•]
 
@@ -89,8 +89,8 @@
    ♦ Jazz             ♦ Kim Hanke        ♦ Alex Clay
    ♦ moonlyer         ♦ Andrey           ♦ Austin Daniel
    ♦ Gabe             ♦ AxelhacK         ♦ RuleTon
-   ♦ LILmighty        ♦ funnycreature    ♦ Mike Hillard
-   ♦ Actine           ♦ Matt             ♦ Neoviper
+   ♦ Mike Hillard     ♦ funnycreature    ♦ Actine
+   ♦ deliriumstalker  ♦ Matt             ♦ Neoviper
    ♦ Jace Greywool    ♦ wangmauler
 
    ♦ Michael Grankin (C++ support for memory crashes)
