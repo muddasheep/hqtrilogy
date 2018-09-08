@@ -91,7 +91,7 @@
    ♦ Gabe             ♦ AxelhacK         ♦ RuleTon
    ♦ Mike Hillard     ♦ funnycreature    ♦ Actine
    ♦ deliriumstalker  ♦ Matt             ♦ Neoviper
-   ♦ Jace Greywool    ♦ wangmauler
+   ♦ Jace Greywool    ♦ wangmauler       ♦ Legendary_Pups
 
    ♦ Michael Grankin (C++ support for memory crashes)
    ♦ Unq (draw distance)
