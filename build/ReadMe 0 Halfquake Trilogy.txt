@@ -100,6 +100,8 @@
    ♦ Kowi (bug report)
    ♦ Vladislav "KeshaFilm" Gavrilov (SoundRecorder)
    ♦ Sasha Voskanyan (hq2_pointless)
+   ♦ Varik Valefor (beta testing)
+   ♦ Pinkerator (beta testing)
 
 [•]--------------------------------------------------------[•]
 
