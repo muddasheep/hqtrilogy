@@ -669,13 +669,14 @@ void CFuncRotating :: HurtTouch ( CBaseEntity *pOther )
 		return;
 
 	// calculate damage based on rotation speed
-	pev->dmg = m_fCurSpeed / 10; //LRC
-//	pev->dmg = pev->avelocity.Length() / 10;
+//	pev->dmg = m_fCurSpeed / 10; //LRC
+	pev->dmg = pev->avelocity.Length() / 10;
 
-	if (m_hActivator)
+/*	if (m_hActivator)
 		pOther->TakeDamage( pev, m_hActivator->pev, pev->dmg, DMG_CRUSH );	//AJH Attribute damage to he who switched me.
-	else
-		pOther->TakeDamage( pev, pev, pev->dmg, DMG_CRUSH );
+	else*/
+
+	pOther->TakeDamage( pev, pev, pev->dmg, DMG_CRUSH );
 	
 	pevOther->velocity = (pevOther->origin - VecBModelOrigin(pev) ).Normalize() * pev->dmg;
 }
@@ -851,10 +852,13 @@ void CFuncRotating :: RotatingUse( CBaseEntity *pActivator, CBaseEntity *pCaller
 void CFuncRotating :: Blocked( CBaseEntity *pOther )
 
 {
-	if (m_hActivator)
+/*	if (m_hActivator)
 		pOther->TakeDamage( pev, m_hActivator->pev, pev->dmg, DMG_CRUSH );	//AJH Attribute damage to he who switched me.
 	else
-		pOther->TakeDamage( pev, pev, pev->dmg, DMG_CRUSH );
+	*/
+
+	pOther->TakeDamage( pev, pev, pev->dmg, DMG_CRUSH );
+
 }
 
 
