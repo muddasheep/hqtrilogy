@@ -79,6 +79,9 @@
    ♦ Sea of Trees (music for HQ1)
        |- https://seaoftreesmetal.bandcamp.com
 
+   ♦ Reckoner27 (cello for HQ2)
+       |- https://www.youtube.com/user/reckoner27cello
+
 [•]--------------------------------------------------------[•]
 
   And now, a round of applause for the following very
@@ -92,7 +95,7 @@
    ♦ Mike Hillard     ♦ funnycreature    ♦ Actine
    ♦ deliriumstalker  ♦ Matt             ♦ Neoviper
    ♦ Jace Greywool    ♦ wangmauler       ♦ Legendary_Pups
-   ♦ Syruss
+   ♦ Syruss           ♦ Ronny            ♦ Sharpet
 
    ♦ Michael Grankin (C++ support for memory crashes)
    ♦ Unq (draw distance)
