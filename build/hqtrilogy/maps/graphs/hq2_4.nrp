@@ -1,0 +1,1659 @@
+Node Graph Report for map:  hq2_4.bsp
+37 Total Nodes
+
+Node#            0
+Location      1109, 239,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            1
+Location      1123, -14,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            2
+Location      1102,  83,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            3
+Location       930, 230,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            4
+Location       827, 218,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            5
+Location       671, 230,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            6
+Location       498, 222,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            7
+Location       481,  98,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            8
+Location       477,   0,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#            9
+Location       471,-128,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           10
+Location       486,-271,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           11
+Location       471,-195,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           12
+Location       480,-382,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           13
+Location       588,-408,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           14
+Location       664,-408,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           15
+Location       769,-427,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           16
+Location       831,-418,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           17
+Location       942,-412,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           18
+Location      1007,-424,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           19
+Location      1071,-339,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           20
+Location      1130,-143,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           21
+Location      1061,-235,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           22
+Location       884,-423,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           23
+Location       671,  64,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           24
+Location       799,-192,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           25
+Location       655, -75,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           26
+Location       928, -67,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           27
+Location       927,-193,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           28
+Location       794, 143,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           29
+Location       860,  66,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           30
+Location       994,  62,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           31
+Location       595,  65,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           32
+Location       605,-190,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           33
+Location       736,-187,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           34
+Location       668,-260,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           35
+Location       806,-252,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+Node#           36
+Location       928,-257,-3200
+HintType:        0
+HintActivity:    0
+HintYaw:      0.000000
+-------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+LinkVisibleNodes - Initial Connections
+----------------------------------------------------------------------------
+Node #   0:
+
+   1
+   2
+   3
+   4
+   5
+   6
+  18
+  19
+  20
+  21
+  26  Entity on connection: func_button, name: exor_dead  Model: *32
+  28  Entity on connection: func_button, name: exor_dead  Model: *39
+  29  Entity on connection: func_button, name: exor_dead  Model: *33
+  30  Entity on connection: func_button, name: exor_dead  Model: *33
+----------------------------------------------------------------------------
+Node #   1:
+
+   0
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *33
+   4  Entity on connection: func_button, name: exor_dead  Model: *33
+   5  Entity on connection: func_button, name: exor_dead  Model: *39
+  17  Entity on connection: func_button, name: exor_dead  Model: *30
+  18
+  19
+  20
+  21
+  22  Entity on connection: func_button, name: exor_dead  Model: *30
+  25  Entity on connection: func_button, name: exor_dead  Model: *32
+  26
+  27  Entity on connection: func_button, name: exor_dead  Model: *31
+  28  Entity on connection: func_button, name: exor_dead  Model: *39
+  29  Entity on connection: func_button, name: exor_dead  Model: *32
+  30
+  33  Entity on connection: func_button, name: exor_dead  Model: *37
+  36  Entity on connection: func_button, name: exor_dead  Model: *31
+----------------------------------------------------------------------------
+Node #   2:
+
+   0
+   1
+   3  Entity on connection: func_button, name: exor_dead  Model: *33
+   4  Entity on connection: func_button, name: exor_dead  Model: *33
+   7
+  16  Entity on connection: func_button, name: exor_dead  Model: *31
+  18
+  19
+  20
+  21
+  23
+  25  Entity on connection: func_button, name: exor_dead  Model: *38
+  26  Entity on connection: func_button, name: exor_dead  Model: *32
+  27  Entity on connection: func_button, name: exor_dead  Model: *31
+  29
+  30
+  31
+  36  Entity on connection: func_button, name: exor_dead  Model: *31
+----------------------------------------------------------------------------
+Node #   3:
+
+   0
+   1  Entity on connection: func_button, name: exor_dead  Model: *33
+   2  Entity on connection: func_button, name: exor_dead  Model: *33
+   4
+   5
+   6
+   7  Entity on connection: func_wall, name:   Model: *48
+   8  Entity on connection: func_button, name: exor_dead  Model: *44
+  17
+  20  Entity on connection: func_button, name: exor_dead  Model: *33
+  22  Entity on connection: func_button, name: exor_dead  Model: *34
+  23  Entity on connection: func_button, name: exor_dead  Model: *44
+  26
+  27
+  28
+  29  Entity on connection: func_button, name: exor_dead  Model: *39
+  30  Entity on connection: func_button, name: exor_dead  Model: *33
+  31  Entity on connection: func_button, name: exor_dead  Model: *44
+  36
+----------------------------------------------------------------------------
+Node #   4:
+
+   0
+   1  Entity on connection: func_button, name: exor_dead  Model: *33
+   2  Entity on connection: func_button, name: exor_dead  Model: *33
+   3
+   5
+   6
+   7  Entity on connection: func_wall, name:   Model: *48
+  15
+  16
+  23  Entity on connection: func_button, name: exor_dead  Model: *44
+  24
+  28
+  29  Entity on connection: func_button, name: exor_dead  Model: *39
+  30  Entity on connection: func_button, name: exor_dead  Model: *39
+  31  Entity on connection: func_button, name: exor_dead  Model: *44
+  33  Entity on connection: func_button, name: exor_dead  Model: *40
+  35
+----------------------------------------------------------------------------
+Node #   5:
+
+   0
+   1  Entity on connection: func_button, name: exor_dead  Model: *39
+   3
+   4
+   6
+   7
+  14
+  23
+  25
+  28
+  29  Entity on connection: func_button, name: exor_dead  Model: *44
+  30  Entity on connection: func_button, name: exor_dead  Model: *39
+  31  Entity on connection: func_wall, name:   Model: *48
+  34
+----------------------------------------------------------------------------
+Node #   6:
+
+   0
+   3
+   4
+   5
+   7
+   8
+   9
+  10
+  11
+  12
+  13
+  23  Entity on connection: func_wall, name:   Model: *48
+  25  Entity on connection: func_button, name: exor_dead  Model: *42
+  28  Entity on connection: func_button, name: exor_dead  Model: *44
+  29  Entity on connection: func_button, name: exor_dead  Model: *44
+  31
+  32  Entity on connection: func_button, name: exor_dead  Model: *41
+----------------------------------------------------------------------------
+Node #   7:
+
+   2
+   3  Entity on connection: func_wall, name:   Model: *48
+   4  Entity on connection: func_wall, name:   Model: *48
+   5
+   6
+   8
+   9
+  10
+  11
+  12
+  13
+  14  Entity on connection: func_button, name: exor_dead  Model: *36
+  15  Entity on connection: func_button, name: exor_dead  Model: *41
+  23
+  25  Entity on connection: func_button, name: exor_dead  Model: *42
+  29
+  30
+  31
+  32  Entity on connection: func_button, name: exor_dead  Model: *41
+  34  Entity on connection: func_button, name: exor_dead  Model: *41
+----------------------------------------------------------------------------
+Node #   8:
+
+   3  Entity on connection: func_button, name: exor_dead  Model: *44
+   6
+   7
+   9
+  10
+  11
+  12
+  13
+  14  Entity on connection: func_button, name: exor_dead  Model: *36
+  23
+  25
+  26  Entity on connection: func_button, name: exor_dead  Model: *42
+  28  Entity on connection: func_button, name: exor_dead  Model: *44
+  29  Entity on connection: func_button, name: exor_dead  Model: *42
+  31
+  32  Entity on connection: func_button, name: exor_dead  Model: *41
+  33  Entity on connection: func_button, name: exor_dead  Model: *41
+  34  Entity on connection: func_button, name: exor_dead  Model: *41
+  35  Entity on connection: func_button, name: exor_dead  Model: *41
+----------------------------------------------------------------------------
+Node #   9:
+
+   6
+   7
+   8
+  10
+  11
+  12
+  13
+  14  Entity on connection: func_button, name: exor_dead  Model: *36
+  15  Entity on connection: func_button, name: exor_dead  Model: *36
+  16  Entity on connection: func_button, name: exor_dead  Model: *36
+  18  Entity on connection: func_button, name: exor_dead  Model: *35
+  22  Entity on connection: func_button, name: exor_dead  Model: *36
+  23  Entity on connection: func_button, name: exor_dead  Model: *42
+  24  Entity on connection: func_button, name: exor_dead  Model: *41
+  25  Entity on connection: func_button, name: exor_dead  Model: *41
+  27  Entity on connection: func_button, name: exor_dead  Model: *41
+  29  Entity on connection: func_button, name: exor_dead  Model: *43
+  31
+  32
+  33  Entity on connection: func_button, name: exor_dead  Model: *41
+  34  Entity on connection: func_button, name: exor_dead  Model: *36
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+----------------------------------------------------------------------------
+Node #  10:
+
+   6
+   7
+   8
+   9
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19  Entity on connection: func_button, name: exor_dead  Model: *36
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *36
+  25  Entity on connection: func_button, name: exor_dead  Model: *41
+  31  Entity on connection: func_button, name: exor_dead  Model: *42
+  32
+  33  Entity on connection: func_button, name: exor_dead  Model: *36
+  34  Entity on connection: func_button, name: exor_dead  Model: *36
+----------------------------------------------------------------------------
+Node #  11:
+
+   6
+   7
+   8
+   9
+  10
+  12
+  13
+  14
+  15  Entity on connection: func_button, name: exor_dead  Model: *36
+  16  Entity on connection: func_button, name: exor_dead  Model: *36
+  17  Entity on connection: func_button, name: exor_dead  Model: *36
+  18  Entity on connection: func_button, name: exor_dead  Model: *36
+  20  Entity on connection: func_button, name: exor_dead  Model: *31
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22  Entity on connection: func_button, name: exor_dead  Model: *36
+  23  Entity on connection: func_button, name: exor_dead  Model: *42
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *41
+  27
+  31  Entity on connection: func_button, name: exor_dead  Model: *42
+  32
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *36
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+----------------------------------------------------------------------------
+Node #  12:
+
+   6
+   7
+   8
+   9
+  10
+  11
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  22
+  25  Entity on connection: func_button, name: exor_dead  Model: *41
+  31  Entity on connection: func_button, name: exor_dead  Model: *42
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33  Entity on connection: func_button, name: exor_dead  Model: *36
+  34  Entity on connection: func_button, name: exor_dead  Model: *36
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  13:
+
+   6
+   7
+   8
+   9
+  10
+  11
+  12
+  14
+  15
+  16
+  17
+  18
+  19
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *35
+  27  Entity on connection: func_button, name: exor_dead  Model: *34
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33  Entity on connection: func_button, name: exor_dead  Model: *35
+  34
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  14:
+
+   5
+   7  Entity on connection: func_button, name: exor_dead  Model: *36
+   8  Entity on connection: func_button, name: exor_dead  Model: *36
+   9  Entity on connection: func_button, name: exor_dead  Model: *36
+  10
+  11
+  12
+  13
+  15
+  16
+  17
+  18
+  19
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22
+  23
+  24  Entity on connection: func_button, name: exor_dead  Model: *35
+  25
+  27  Entity on connection: func_button, name: exor_dead  Model: *34
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33  Entity on connection: func_button, name: exor_dead  Model: *35
+  34
+  35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  15:
+
+   4
+   7  Entity on connection: func_button, name: exor_dead  Model: *41
+   9  Entity on connection: func_button, name: exor_dead  Model: *36
+  10
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  16
+  17
+  18
+  19
+  20  Entity on connection: func_button, name: exor_dead  Model: *30
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *35
+  27  Entity on connection: func_button, name: exor_dead  Model: *34
+  28
+  29  Entity on connection: func_button, name: exor_dead  Model: *38
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33  Entity on connection: func_button, name: exor_dead  Model: *35
+  34
+  35
+  36
+----------------------------------------------------------------------------
+Node #  16:
+
+   2  Entity on connection: func_button, name: exor_dead  Model: *31
+   4
+   9  Entity on connection: func_button, name: exor_dead  Model: *36
+  10
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  15
+  17
+  18
+  19
+  20  Entity on connection: func_button, name: exor_dead  Model: *30
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *35
+  26  Entity on connection: func_button, name: exor_dead  Model: *34
+  27  Entity on connection: func_button, name: exor_dead  Model: *34
+  28
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33  Entity on connection: func_button, name: exor_dead  Model: *35
+  34
+  35
+  36
+----------------------------------------------------------------------------
+Node #  17:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *30
+   3
+  10
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  15
+  16
+  18
+  19
+  20
+  21
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *34
+  26
+  27
+  32  Entity on connection: func_button, name: exor_dead  Model: *35
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+  36
+----------------------------------------------------------------------------
+Node #  18:
+
+   0
+   1
+   2
+   9  Entity on connection: func_button, name: exor_dead  Model: *35
+  10
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  15
+  16
+  17
+  19
+  20
+  21
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *34
+  26  Entity on connection: func_button, name: exor_dead  Model: *30
+  27
+  32  Entity on connection: func_button, name: exor_dead  Model: *35
+  33  Entity on connection: func_button, name: exor_dead  Model: *34
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+  36
+----------------------------------------------------------------------------
+Node #  19:
+
+   0
+   1
+   2
+  10  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  20
+  21
+  22
+  27  Entity on connection: func_button, name: exor_dead  Model: *30
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  33  Entity on connection: func_button, name: exor_dead  Model: *34
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+  36  Entity on connection: func_button, name: exor_dead  Model: *30
+----------------------------------------------------------------------------
+Node #  20:
+
+   0
+   1
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *33
+  11  Entity on connection: func_button, name: exor_dead  Model: *31
+  15  Entity on connection: func_button, name: exor_dead  Model: *30
+  16  Entity on connection: func_button, name: exor_dead  Model: *30
+  17
+  18
+  19
+  21
+  22  Entity on connection: func_button, name: exor_dead  Model: *30
+  24  Entity on connection: func_button, name: exor_dead  Model: *31
+  26  Entity on connection: func_button, name: exor_dead  Model: *31
+  27
+  29  Entity on connection: func_button, name: exor_dead  Model: *32
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  32  Entity on connection: func_button, name: exor_dead  Model: *31
+  33  Entity on connection: func_button, name: exor_dead  Model: *31
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+  36  Entity on connection: func_button, name: exor_dead  Model: *30
+----------------------------------------------------------------------------
+Node #  21:
+
+   0
+   1
+   2
+  11  Entity on connection: func_button, name: exor_dead  Model: *30
+  13  Entity on connection: func_button, name: exor_dead  Model: *30
+  14  Entity on connection: func_button, name: exor_dead  Model: *30
+  15  Entity on connection: func_button, name: exor_dead  Model: *30
+  16  Entity on connection: func_button, name: exor_dead  Model: *30
+  17
+  18
+  19
+  20
+  22  Entity on connection: func_button, name: exor_dead  Model: *30
+  24  Entity on connection: func_button, name: exor_dead  Model: *30
+  26  Entity on connection: func_button, name: exor_dead  Model: *31
+  27
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  32  Entity on connection: func_button, name: exor_dead  Model: *30
+  33  Entity on connection: func_button, name: exor_dead  Model: *30
+  36  Entity on connection: func_button, name: exor_dead  Model: *30
+----------------------------------------------------------------------------
+Node #  22:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *30
+   3  Entity on connection: func_button, name: exor_dead  Model: *34
+   9  Entity on connection: func_button, name: exor_dead  Model: *36
+  10
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  20  Entity on connection: func_button, name: exor_dead  Model: *30
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  24  Entity on connection: func_button, name: exor_dead  Model: *34
+  26
+  27
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  32  Entity on connection: func_button, name: exor_dead  Model: *35
+  33  Entity on connection: func_button, name: exor_dead  Model: *35
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35
+  36
+----------------------------------------------------------------------------
+Node #  23:
+
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *44
+   4  Entity on connection: func_button, name: exor_dead  Model: *44
+   5
+   6  Entity on connection: func_wall, name:   Model: *48
+   7
+   8
+   9  Entity on connection: func_button, name: exor_dead  Model: *42
+  11  Entity on connection: func_button, name: exor_dead  Model: *42
+  14
+  25
+  28  Entity on connection: func_button, name: exor_dead  Model: *44
+  29
+  30
+  31
+  32  Entity on connection: func_button, name: exor_dead  Model: *41
+  33  Entity on connection: func_button, name: exor_dead  Model: *40
+  34
+----------------------------------------------------------------------------
+Node #  24:
+
+   4
+   9  Entity on connection: func_button, name: exor_dead  Model: *41
+  10  Entity on connection: func_button, name: exor_dead  Model: *36
+  11
+  13  Entity on connection: func_button, name: exor_dead  Model: *35
+  14  Entity on connection: func_button, name: exor_dead  Model: *35
+  15
+  16
+  17  Entity on connection: func_button, name: exor_dead  Model: *34
+  18  Entity on connection: func_button, name: exor_dead  Model: *34
+  20  Entity on connection: func_button, name: exor_dead  Model: *31
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22  Entity on connection: func_button, name: exor_dead  Model: *34
+  25  Entity on connection: func_button, name: exor_dead  Model: *40
+  26  Entity on connection: func_button, name: exor_dead  Model: *37
+  27
+  28
+  29  Entity on connection: func_button, name: exor_dead  Model: *38
+  32
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  25:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *32
+   2  Entity on connection: func_button, name: exor_dead  Model: *38
+   5
+   6  Entity on connection: func_button, name: exor_dead  Model: *42
+   7  Entity on connection: func_button, name: exor_dead  Model: *42
+   8
+   9  Entity on connection: func_button, name: exor_dead  Model: *41
+  10  Entity on connection: func_button, name: exor_dead  Model: *41
+  11  Entity on connection: func_button, name: exor_dead  Model: *41
+  12  Entity on connection: func_button, name: exor_dead  Model: *41
+  14
+  15  Entity on connection: func_button, name: exor_dead  Model: *35
+  16  Entity on connection: func_button, name: exor_dead  Model: *35
+  23
+  24  Entity on connection: func_button, name: exor_dead  Model: *40
+  26
+  29  Entity on connection: func_button, name: exor_dead  Model: *43
+  31  Entity on connection: func_button, name: exor_dead  Model: *42
+  32  Entity on connection: func_button, name: exor_dead  Model: *41
+  33  Entity on connection: func_button, name: exor_dead  Model: *40
+  34
+  35  Entity on connection: func_button, name: exor_dead  Model: *40
+----------------------------------------------------------------------------
+Node #  26:
+
+   0  Entity on connection: func_button, name: exor_dead  Model: *32
+   1
+   2  Entity on connection: func_button, name: exor_dead  Model: *32
+   3
+   8  Entity on connection: func_button, name: exor_dead  Model: *42
+  16  Entity on connection: func_button, name: exor_dead  Model: *34
+  17
+  18  Entity on connection: func_button, name: exor_dead  Model: *30
+  20  Entity on connection: func_button, name: exor_dead  Model: *31
+  21  Entity on connection: func_button, name: exor_dead  Model: *31
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *37
+  25
+  27
+  28  Entity on connection: func_button, name: exor_dead  Model: *38
+  29  Entity on connection: func_button, name: exor_dead  Model: *38
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  33  Entity on connection: func_button, name: exor_dead  Model: *37
+  35  Entity on connection: func_button, name: exor_dead  Model: *37
+  36
+----------------------------------------------------------------------------
+Node #  27:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *31
+   2  Entity on connection: func_button, name: exor_dead  Model: *31
+   3
+   9  Entity on connection: func_button, name: exor_dead  Model: *41
+  11
+  13  Entity on connection: func_button, name: exor_dead  Model: *34
+  14  Entity on connection: func_button, name: exor_dead  Model: *34
+  15  Entity on connection: func_button, name: exor_dead  Model: *34
+  16  Entity on connection: func_button, name: exor_dead  Model: *34
+  17
+  18
+  19  Entity on connection: func_button, name: exor_dead  Model: *30
+  20
+  21
+  22
+  24
+  26
+  29  Entity on connection: func_button, name: exor_dead  Model: *38
+  30  Entity on connection: func_button, name: exor_dead  Model: *32
+  32
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+  36
+----------------------------------------------------------------------------
+Node #  28:
+
+   0  Entity on connection: func_button, name: exor_dead  Model: *39
+   1  Entity on connection: func_button, name: exor_dead  Model: *39
+   3
+   4
+   5
+   6  Entity on connection: func_button, name: exor_dead  Model: *44
+   8  Entity on connection: func_button, name: exor_dead  Model: *44
+  15
+  16
+  23  Entity on connection: func_button, name: exor_dead  Model: *44
+  24
+  26  Entity on connection: func_button, name: exor_dead  Model: *38
+  29  Entity on connection: func_button, name: exor_dead  Model: *39
+  30  Entity on connection: func_button, name: exor_dead  Model: *39
+  31  Entity on connection: func_button, name: exor_dead  Model: *44
+  35
+----------------------------------------------------------------------------
+Node #  29:
+
+   0  Entity on connection: func_button, name: exor_dead  Model: *33
+   1  Entity on connection: func_button, name: exor_dead  Model: *32
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *39
+   4  Entity on connection: func_button, name: exor_dead  Model: *39
+   5  Entity on connection: func_button, name: exor_dead  Model: *44
+   6  Entity on connection: func_button, name: exor_dead  Model: *44
+   7
+   8  Entity on connection: func_button, name: exor_dead  Model: *42
+   9  Entity on connection: func_button, name: exor_dead  Model: *43
+  15  Entity on connection: func_button, name: exor_dead  Model: *38
+  20  Entity on connection: func_button, name: exor_dead  Model: *32
+  23
+  24  Entity on connection: func_button, name: exor_dead  Model: *38
+  25  Entity on connection: func_button, name: exor_dead  Model: *43
+  26  Entity on connection: func_button, name: exor_dead  Model: *38
+  27  Entity on connection: func_button, name: exor_dead  Model: *38
+  28  Entity on connection: func_button, name: exor_dead  Model: *39
+  30
+  31
+----------------------------------------------------------------------------
+Node #  30:
+
+   0  Entity on connection: func_button, name: exor_dead  Model: *33
+   1
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *33
+   4  Entity on connection: func_button, name: exor_dead  Model: *39
+   5  Entity on connection: func_button, name: exor_dead  Model: *39
+   7
+  19  Entity on connection: func_button, name: exor_dead  Model: *32
+  20  Entity on connection: func_button, name: exor_dead  Model: *32
+  21  Entity on connection: func_button, name: exor_dead  Model: *32
+  22  Entity on connection: func_button, name: exor_dead  Model: *32
+  23
+  26  Entity on connection: func_button, name: exor_dead  Model: *32
+  27  Entity on connection: func_button, name: exor_dead  Model: *32
+  28  Entity on connection: func_button, name: exor_dead  Model: *39
+  29
+  31
+----------------------------------------------------------------------------
+Node #  31:
+
+   2
+   3  Entity on connection: func_button, name: exor_dead  Model: *44
+   4  Entity on connection: func_button, name: exor_dead  Model: *44
+   5  Entity on connection: func_wall, name:   Model: *48
+   6
+   7
+   8
+   9
+  10  Entity on connection: func_button, name: exor_dead  Model: *42
+  11  Entity on connection: func_button, name: exor_dead  Model: *42
+  12  Entity on connection: func_button, name: exor_dead  Model: *42
+  23
+  25  Entity on connection: func_button, name: exor_dead  Model: *42
+  28  Entity on connection: func_button, name: exor_dead  Model: *44
+  29
+  30
+----------------------------------------------------------------------------
+Node #  32:
+
+   6  Entity on connection: func_button, name: exor_dead  Model: *41
+   7  Entity on connection: func_button, name: exor_dead  Model: *41
+   8  Entity on connection: func_button, name: exor_dead  Model: *41
+   9
+  10
+  11
+  12  Entity on connection: func_button, name: exor_dead  Model: *36
+  13  Entity on connection: func_button, name: exor_dead  Model: *36
+  14  Entity on connection: func_button, name: exor_dead  Model: *36
+  15  Entity on connection: func_button, name: exor_dead  Model: *36
+  16  Entity on connection: func_button, name: exor_dead  Model: *36
+  17  Entity on connection: func_button, name: exor_dead  Model: *35
+  18  Entity on connection: func_button, name: exor_dead  Model: *35
+  20  Entity on connection: func_button, name: exor_dead  Model: *31
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22  Entity on connection: func_button, name: exor_dead  Model: *35
+  23  Entity on connection: func_button, name: exor_dead  Model: *41
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *41
+  27
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *36
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  33:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *37
+   4  Entity on connection: func_button, name: exor_dead  Model: *40
+   8  Entity on connection: func_button, name: exor_dead  Model: *41
+   9  Entity on connection: func_button, name: exor_dead  Model: *41
+  10  Entity on connection: func_button, name: exor_dead  Model: *36
+  11
+  12  Entity on connection: func_button, name: exor_dead  Model: *36
+  13  Entity on connection: func_button, name: exor_dead  Model: *35
+  14  Entity on connection: func_button, name: exor_dead  Model: *35
+  15  Entity on connection: func_button, name: exor_dead  Model: *35
+  16  Entity on connection: func_button, name: exor_dead  Model: *35
+  17
+  18  Entity on connection: func_button, name: exor_dead  Model: *34
+  19  Entity on connection: func_button, name: exor_dead  Model: *34
+  20  Entity on connection: func_button, name: exor_dead  Model: *31
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22  Entity on connection: func_button, name: exor_dead  Model: *35
+  23  Entity on connection: func_button, name: exor_dead  Model: *40
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *40
+  26  Entity on connection: func_button, name: exor_dead  Model: *37
+  27
+  32
+  34
+  35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  34:
+
+   5
+   7  Entity on connection: func_button, name: exor_dead  Model: *41
+   8  Entity on connection: func_button, name: exor_dead  Model: *41
+   9  Entity on connection: func_button, name: exor_dead  Model: *36
+  10  Entity on connection: func_button, name: exor_dead  Model: *36
+  11  Entity on connection: func_button, name: exor_dead  Model: *36
+  12  Entity on connection: func_button, name: exor_dead  Model: *36
+  13
+  14
+  15
+  16
+  17  Entity on connection: func_button, name: exor_dead  Model: *35
+  18  Entity on connection: func_button, name: exor_dead  Model: *35
+  19  Entity on connection: func_button, name: exor_dead  Model: *35
+  20  Entity on connection: func_button, name: exor_dead  Model: *35
+  22  Entity on connection: func_button, name: exor_dead  Model: *35
+  23
+  24  Entity on connection: func_button, name: exor_dead  Model: *35
+  25
+  27  Entity on connection: func_button, name: exor_dead  Model: *35
+  32  Entity on connection: func_button, name: exor_dead  Model: *36
+  33
+  35  Entity on connection: func_button, name: exor_dead  Model: *35
+----------------------------------------------------------------------------
+Node #  35:
+
+   4
+   8  Entity on connection: func_button, name: exor_dead  Model: *41
+   9  Entity on connection: func_button, name: exor_dead  Model: *35
+  11  Entity on connection: func_button, name: exor_dead  Model: *35
+  12  Entity on connection: func_button, name: exor_dead  Model: *35
+  13  Entity on connection: func_button, name: exor_dead  Model: *35
+  14
+  15
+  16
+  17  Entity on connection: func_button, name: exor_dead  Model: *34
+  18  Entity on connection: func_button, name: exor_dead  Model: *34
+  19  Entity on connection: func_button, name: exor_dead  Model: *34
+  20  Entity on connection: func_button, name: exor_dead  Model: *34
+  22
+  24
+  25  Entity on connection: func_button, name: exor_dead  Model: *40
+  26  Entity on connection: func_button, name: exor_dead  Model: *37
+  27  Entity on connection: func_button, name: exor_dead  Model: *34
+  28
+  32  Entity on connection: func_button, name: exor_dead  Model: *35
+  33
+  34  Entity on connection: func_button, name: exor_dead  Model: *35
+  36  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+Node #  36:
+
+   1  Entity on connection: func_button, name: exor_dead  Model: *31
+   2  Entity on connection: func_button, name: exor_dead  Model: *31
+   3
+  12  Entity on connection: func_button, name: exor_dead  Model: *34
+  13  Entity on connection: func_button, name: exor_dead  Model: *34
+  14  Entity on connection: func_button, name: exor_dead  Model: *34
+  15
+  16
+  17
+  18
+  19  Entity on connection: func_button, name: exor_dead  Model: *30
+  20  Entity on connection: func_button, name: exor_dead  Model: *30
+  21  Entity on connection: func_button, name: exor_dead  Model: *30
+  22
+  24  Entity on connection: func_button, name: exor_dead  Model: *34
+  26
+  27
+  32  Entity on connection: func_button, name: exor_dead  Model: *34
+  33  Entity on connection: func_button, name: exor_dead  Model: *34
+  35  Entity on connection: func_button, name: exor_dead  Model: *34
+----------------------------------------------------------------------------
+
+ 764 Total Initial Connections -   26 Maximum connections for a single node.
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+Walk Rejection:
+-------------------------------------------------------------------------------
+Node    0:
+
+-------------------------------------------------------------------------------
+Node    1:
+
+-------------------------------------------------------------------------------
+Node    2:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node    3:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   8 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  31 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node    4:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  31 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node    5:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+NODE_LARGE_HULL step 0.000000
+NODE_LARGE_HULL step 0.000000
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node  31 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node    6:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node  23 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  25 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  31 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  29 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node    7:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   2 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   3 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   4 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   5 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  30 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  29 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  23 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node    8:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   3 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node    9:
+
+-------------------------------------------------------------------------------
+Node   10:
+
+-------------------------------------------------------------------------------
+Node   11:
+
+-------------------------------------------------------------------------------
+Node   12:
+
+-------------------------------------------------------------------------------
+Node   13:
+
+-------------------------------------------------------------------------------
+Node   14:
+
+-------------------------------------------------------------------------------
+Node   15:
+
+-------------------------------------------------------------------------------
+Node   16:
+
+-------------------------------------------------------------------------------
+Node   17:
+
+-------------------------------------------------------------------------------
+Node   18:
+
+-------------------------------------------------------------------------------
+Node   19:
+
+-------------------------------------------------------------------------------
+Node   20:
+
+-------------------------------------------------------------------------------
+Node   21:
+
+-------------------------------------------------------------------------------
+Node   22:
+
+-------------------------------------------------------------------------------
+Node   23:
+
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   6 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node   24:
+
+-------------------------------------------------------------------------------
+Node   25:
+
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   6 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node   26:
+
+-------------------------------------------------------------------------------
+Node   27:
+
+-------------------------------------------------------------------------------
+Node   28:
+
+NODE_LARGE_HULL step 0.000000
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node  31 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node   29:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   6 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+-------------------------------------------------------------------------------
+Node   30:
+
+NODE_SMALL_HULL step 0.000000
+Rejected Node   7 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node   31:
+
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   3 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   4 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+NODE_SMALL_HULL step 0.000000
+Rejected Node   5 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node  28 - Unreachable by Any Hull
+NODE_SMALL_HULL step 0.000000
+Rejected Node   6 - Unreachable by Any Hull
+NODE_LARGE_HULL step 0.000000
+NODE_LARGE_HULL step 0.000000
+-------------------------------------------------------------------------------
+Node   32:
+
+-------------------------------------------------------------------------------
+Node   33:
+
+-------------------------------------------------------------------------------
+Node   34:
+
+-------------------------------------------------------------------------------
+Node   35:
+
+-------------------------------------------------------------------------------
+Node   36:
+
+-------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+InLine Rejection:
+----------------------------------------------------------------------------
+Node   0:
+REJECTED NODE   4 through Node   3, Dot = 0.999710
+REJECTED NODE   5 through Node   3, Dot = 0.999559
+REJECTED NODE   6 through Node   3, Dot = 0.999749
+REJECTED NODE  18 through Node  21, Dot = 0.998662
+REJECTED NODE  26 through Node  30, Dot = 0.999117
+REJECTED NODE  21 through Node   2, Dot = 0.998428
+REJECTED NODE  20 through Node   1, Dot = 1.000000
+REJECTED NODE  19 through Node   2, Dot = 0.999783
+----------------------------------------------------------------------------
+
+Node   1:
+REJECTED NODE   5 through Node  28, Dot = 0.998763
+REJECTED NODE  18 through Node  21, Dot = 0.999998
+----------------------------------------------------------------------------
+
+Node   2:
+REJECTED NODE  16 through Node  36, Dot = 0.999740
+REJECTED NODE  31 through Node  23, Dot = 0.999963
+REJECTED NODE  18 through Node  21, Dot = 0.998376
+REJECTED NODE  19 through Node  21, Dot = 0.998494
+REJECTED NODE  23 through Node  29, Dot = 0.999660
+----------------------------------------------------------------------------
+
+Node   3:
+REJECTED NODE   6 through Node   5, Dot = 0.999829
+REJECTED NODE  36 through Node  26, Dot = 0.999996
+REJECTED NODE  17 through Node  26, Dot = 0.999677
+REJECTED NODE  27 through Node  26, Dot = 1.000000
+REJECTED NODE  23 through Node  28, Dot = 1.000000
+----------------------------------------------------------------------------
+
+Node   4:
+REJECTED NODE   0 through Node   3, Dot = 0.999133
+REJECTED NODE  35 through Node  24, Dot = 0.999723
+REJECTED NODE  15 through Node  24, Dot = 0.999769
+----------------------------------------------------------------------------
+
+Node   5:
+REJECTED NODE   0 through Node   3, Dot = 0.999789
+REJECTED NODE   1 through Node  30, Dot = 0.999882
+REJECTED NODE  34 through Node  23, Dot = 0.999981
+REJECTED NODE  14 through Node  23, Dot = 0.999940
+REJECTED NODE  25 through Node  23, Dot = 0.998627
+----------------------------------------------------------------------------
+
+Node   6:
+REJECTED NODE   0 through Node   3, Dot = 0.999957
+REJECTED NODE   3 through Node   4, Dot = 0.999530
+REJECTED NODE   4 through Node   5, Dot = 0.998297
+REJECTED NODE   8 through Node   7, Dot = 0.999121
+REJECTED NODE  12 through Node   9, Dot = 0.998886
+REJECTED NODE  11 through Node   9, Dot = 0.999924
+REJECTED NODE  10 through Node   9, Dot = 0.998614
+REJECTED NODE   9 through Node   7, Dot = 0.998245
+----------------------------------------------------------------------------
+
+Node   7:
+REJECTED NODE   9 through Node   8, Dot = 0.999994
+REJECTED NODE  15 through Node  34, Dot = 0.999792
+REJECTED NODE  14 through Node  32, Dot = 0.998228
+REJECTED NODE  10 through Node   8, Dot = 0.998524
+REJECTED NODE  12 through Node   8, Dot = 0.999251
+REJECTED NODE  11 through Node   8, Dot = 0.999978
+----------------------------------------------------------------------------
+
+Node   8:
+REJECTED NODE  35 through Node  33, Dot = 0.999600
+REJECTED NODE  34 through Node  32, Dot = 0.999170
+REJECTED NODE   6 through Node   7, Dot = 0.998568
+REJECTED NODE  11 through Node   9, Dot = 0.999871
+REJECTED NODE  12 through Node   9, Dot = 0.998505
+----------------------------------------------------------------------------
+
+Node   9:
+REJECTED NODE   6 through Node   7, Dot = 0.999463
+REJECTED NODE   7 through Node   8, Dot = 0.999997
+REJECTED NODE  12 through Node  11, Dot = 0.999373
+REJECTED NODE  22 through Node  34, Dot = 0.999553
+REJECTED NODE  24 through Node  33, Dot = 0.999652
+----------------------------------------------------------------------------
+
+Node  10:
+REJECTED NODE   6 through Node   7, Dot = 0.999282
+REJECTED NODE   7 through Node   8, Dot = 0.999807
+REJECTED NODE  18 through Node  17, Dot = 0.999898
+REJECTED NODE  22 through Node  16, Dot = 0.999279
+----------------------------------------------------------------------------
+
+Node  11:
+REJECTED NODE   6 through Node   7, Dot = 0.999534
+REJECTED NODE   7 through Node   8, Dot = 0.999994
+REJECTED NODE   8 through Node   9, Dot = 0.999527
+REJECTED NODE  33 through Node  32, Dot = 0.999975
+REJECTED NODE  18 through Node  17, Dot = 0.999609
+REJECTED NODE  20 through Node  32, Dot = 0.999141
+REJECTED NODE  27 through Node  32, Dot = 0.999458
+REJECTED NODE  22 through Node  16, Dot = 0.998742
+REJECTED NODE  24 through Node  32, Dot = 0.999604
+----------------------------------------------------------------------------
+
+Node  12:
+REJECTED NODE   6 through Node   7, Dot = 0.999616
+REJECTED NODE   7 through Node   8, Dot = 0.999951
+REJECTED NODE   8 through Node   9, Dot = 0.999620
+REJECTED NODE   9 through Node  11, Dot = 0.999920
+REJECTED NODE  15 through Node  14, Dot = 0.999901
+REJECTED NODE  16 through Node  14, Dot = 0.999272
+REJECTED NODE  17 through Node  22, Dot = 0.999341
+REJECTED NODE  25 through Node  32, Dot = 0.998259
+REJECTED NODE  22 through Node  14, Dot = 0.999230
+REJECTED NODE  18 through Node  14, Dot = 0.998149
+----------------------------------------------------------------------------
+
+Node  13:
+REJECTED NODE   7 through Node   8, Dot = 0.998362
+REJECTED NODE  16 through Node  14, Dot = 0.999154
+REJECTED NODE  17 through Node  14, Dot = 0.999936
+REJECTED NODE  18 through Node  14, Dot = 0.999272
+REJECTED NODE  22 through Node  14, Dot = 0.998719
+REJECTED NODE  27 through Node  35, Dot = 0.998437
+----------------------------------------------------------------------------
+
+Node  14:
+REJECTED NODE   5 through Node  23, Dot = 0.999992
+REJECTED NODE  17 through Node  16, Dot = 0.998969
+REJECTED NODE  18 through Node  16, Dot = 0.999913
+REJECTED NODE  22 through Node  16, Dot = 0.999966
+REJECTED NODE  23 through Node  34, Dot = 0.999926
+REJECTED NODE  25 through Node  34, Dot = 0.998540
+----------------------------------------------------------------------------
+
+Node  15:
+REJECTED NODE   4 through Node  24, Dot = 0.999305
+REJECTED NODE   7 through Node  34, Dot = 0.999110
+REJECTED NODE  12 through Node  13, Dot = 0.998756
+REJECTED NODE  17 through Node  16, Dot = 0.998338
+REJECTED NODE  18 through Node  22, Dot = 0.999754
+REJECTED NODE  32 through Node  34, Dot = 0.998116
+REJECTED NODE  29 through Node  35, Dot = 0.999666
+----------------------------------------------------------------------------
+
+Node  16:
+REJECTED NODE   2 through Node  36, Dot = 0.998924
+REJECTED NODE   4 through Node  28, Dot = 0.998226
+REJECTED NODE  12 through Node  13, Dot = 0.998135
+REJECTED NODE  13 through Node  14, Dot = 0.999826
+REJECTED NODE  18 through Node  22, Dot = 0.998202
+REJECTED NODE  32 through Node  34, Dot = 0.999800
+REJECTED NODE  24 through Node  35, Dot = 0.999961
+----------------------------------------------------------------------------
+
+Node  17:
+REJECTED NODE   3 through Node  26, Dot = 0.999761
+REJECTED NODE  12 through Node  13, Dot = 0.998567
+REJECTED NODE  13 through Node  14, Dot = 0.999995
+REJECTED NODE  15 through Node  16, Dot = 0.999472
+REJECTED NODE  33 through Node  35, Dot = 0.999321
+REJECTED NODE  20 through Node  21, Dot = 0.999837
+REJECTED NODE  27 through Node  36, Dot = 0.999765
+REJECTED NODE  26 through Node  36, Dot = 0.998774
+----------------------------------------------------------------------------
+
+Node  18:
+REJECTED NODE   0 through Node   2, Dot = 0.999469
+REJECTED NODE   1 through Node  21, Dot = 0.999997
+REJECTED NODE   9 through Node  32, Dot = 0.999745
+REJECTED NODE  11 through Node  34, Dot = 0.998904
+REJECTED NODE  33 through Node  35, Dot = 0.999942
+REJECTED NODE  12 through Node  13, Dot = 0.999145
+REJECTED NODE  13 through Node  14, Dot = 0.999964
+REJECTED NODE  14 through Node  15, Dot = 0.998247
+REJECTED NODE  15 through Node  16, Dot = 0.998911
+REJECTED NODE  16 through Node  22, Dot = 0.999663
+----------------------------------------------------------------------------
+
+Node  19:
+REJECTED NODE   0 through Node   2, Dot = 0.999971
+REJECTED NODE  13 through Node  14, Dot = 0.999661
+REJECTED NODE  15 through Node  16, Dot = 0.999407
+----------------------------------------------------------------------------
+
+Node  20:
+REJECTED NODE   0 through Node   1, Dot = 1.000000
+REJECTED NODE  11 through Node  32, Dot = 0.999944
+REJECTED NODE  17 through Node  21, Dot = 0.999438
+REJECTED NODE  34 through Node  27, Dot = 0.999979
+REJECTED NODE  33 through Node  24, Dot = 0.999361
+REJECTED NODE  32 through Node  24, Dot = 0.998337
+----------------------------------------------------------------------------
+
+Node  21:
+REJECTED NODE   0 through Node   2, Dot = 0.999627
+REJECTED NODE  11 through Node  32, Dot = 0.999530
+REJECTED NODE  33 through Node  24, Dot = 0.999871
+REJECTED NODE  13 through Node  14, Dot = 0.998181
+----------------------------------------------------------------------------
+
+Node  22:
+REJECTED NODE   3 through Node  26, Dot = 0.998615
+REJECTED NODE   9 through Node  34, Dot = 0.999656
+REJECTED NODE  12 through Node  13, Dot = 0.998725
+REJECTED NODE  13 through Node  14, Dot = 0.999848
+REJECTED NODE  14 through Node  16, Dot = 0.999662
+REJECTED NODE  32 through Node  34, Dot = 0.998783
+REJECTED NODE  30 through Node  36, Dot = 0.999350
+REJECTED NODE  20 through Node  21, Dot = 0.999408
+REJECTED NODE  26 through Node  27, Dot = 0.998088
+----------------------------------------------------------------------------
+
+Node  23:
+REJECTED NODE   2 through Node  29, Dot = 0.999440
+REJECTED NODE   3 through Node  28, Dot = 0.999999
+REJECTED NODE  14 through Node  34, Dot = 0.999984
+REJECTED NODE  30 through Node  29, Dot = 0.999859
+----------------------------------------------------------------------------
+
+Node  24:
+REJECTED NODE  11 through Node  32, Dot = 0.999811
+REJECTED NODE  16 through Node  35, Dot = 0.999699
+----------------------------------------------------------------------------
+
+Node  25:
+REJECTED NODE   5 through Node  23, Dot = 0.998067
+REJECTED NODE  14 through Node  34, Dot = 0.999070
+----------------------------------------------------------------------------
+
+Node  26:
+REJECTED NODE   0 through Node  30, Dot = 0.998125
+REJECTED NODE  36 through Node  27, Dot = 0.999968
+REJECTED NODE  17 through Node  27, Dot = 0.998824
+----------------------------------------------------------------------------
+
+Node  27:
+REJECTED NODE   3 through Node  26, Dot = 1.000000
+REJECTED NODE  11 through Node  24, Dot = 0.999926
+REJECTED NODE  17 through Node  36, Dot = 0.998608
+REJECTED NODE  32 through Node  24, Dot = 0.999999
+REJECTED NODE  33 through Node  24, Dot = 0.999722
+----------------------------------------------------------------------------
+
+Node  28:
+REJECTED NODE   1 through Node  30, Dot = 0.998174
+REJECTED NODE  35 through Node  24, Dot = 0.999881
+REJECTED NODE  15 through Node  24, Dot = 0.998274
+REJECTED NODE  16 through Node  24, Dot = 0.998703
+----------------------------------------------------------------------------
+
+Node  29:
+REJECTED NODE  31 through Node  23, Dot = 0.999977
+REJECTED NODE  15 through Node  24, Dot = 0.998768
+----------------------------------------------------------------------------
+
+Node  30:
+REJECTED NODE  31 through Node  23, Dot = 0.999999
+REJECTED NODE  19 through Node  21, Dot = 0.999483
+REJECTED NODE  22 through Node  27, Dot = 0.999425
+REJECTED NODE  23 through Node  29, Dot = 0.999720
+----------------------------------------------------------------------------
+
+Node  31:
+REJECTED NODE   2 through Node  30, Dot = 0.999075
+REJECTED NODE  12 through Node  10, Dot = 0.998086
+REJECTED NODE  30 through Node  29, Dot = 0.999936
+REJECTED NODE  29 through Node  23, Dot = 0.999857
+----------------------------------------------------------------------------
+
+Node  32:
+REJECTED NODE  16 through Node  34, Dot = 0.998840
+REJECTED NODE  18 through Node  17, Dot = 0.998468
+REJECTED NODE  24 through Node  33, Dot = 0.999449
+REJECTED NODE  27 through Node  33, Dot = 0.999481
+----------------------------------------------------------------------------
+
+Node  33:
+REJECTED NODE  11 through Node  32, Dot = 0.999973
+REJECTED NODE  18 through Node  35, Dot = 0.999556
+REJECTED NODE  27 through Node  24, Dot = 0.998858
+----------------------------------------------------------------------------
+
+Node  34:
+REJECTED NODE   5 through Node  23, Dot = 0.999995
+REJECTED NODE  18 through Node  17, Dot = 0.998438
+REJECTED NODE  20 through Node  27, Dot = 0.999987
+----------------------------------------------------------------------------
+
+Node  35:
+REJECTED NODE   9 through Node  32, Dot = 0.998471
+----------------------------------------------------------------------------
+
+Node  36:
+REJECTED NODE   3 through Node  26, Dot = 0.999992
+REJECTED NODE  26 through Node  27, Dot = 0.999878
+----------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+Link Pairings:
+WARNING: Node   6 does not connect back to Node   1
+WARNING: Node  14 does not connect back to Node   3
+WARNING: Node  19 does not connect back to Node   7
+WARNING: Node  20 does not connect back to Node   7
+WARNING: Node  31 does not connect back to Node   9
+WARNING: Node   9 does not connect back to Node  10
+WARNING: Node  12 does not connect back to Node  10
+WARNING: Node  13 does not connect back to Node  10
+WARNING: Node   2 does not connect back to Node  11
+WARNING: Node   4 does not connect back to Node  11
+WARNING: Node  14 does not connect back to Node  12
+WARNING: Node  30 does not connect back to Node  14
+WARNING: Node  33 does not connect back to Node  14
+WARNING: Node  36 does not connect back to Node  15
+WARNING: Node  14 does not connect back to Node  16
+WARNING: Node  24 does not connect back to Node  17
+WARNING: Node   6 does not connect back to Node  20
+WARNING: Node  29 does not connect back to Node  22
+WARNING: Node  23 does not connect back to Node  22
+WARNING: Node  34 does not connect back to Node  23
+WARNING: Node  12 does not connect back to Node  23
+WARNING: Node  14 does not connect back to Node  23
+WARNING: Node  11 does not connect back to Node  24
+WARNING: Node  13 does not connect back to Node  24
+WARNING: Node  24 does not connect back to Node  25
+WARNING: Node  28 does not connect back to Node  26
+WARNING: Node  32 does not connect back to Node  29
+WARNING: Node  35 does not connect back to Node  29
+WARNING: Node  25 does not connect back to Node  31
+WARNING: Node   7 does not connect back to Node  32
+WARNING: Node  28 does not connect back to Node  32
+WARNING: Node   6 does not connect back to Node  32
+WARNING: Node  13 does not connect back to Node  33
+WARNING: Node   6 does not connect back to Node  34
+WARNING: Node  11 does not connect back to Node  34
+WARNING: Node   2 does not connect back to Node  35
+WARNING: Node  26 does not connect back to Node  35
+WARNING: Node  30 does not connect back to Node  35
+WARNING: Node  23 does not connect back to Node  35
+WARNING: Node  27 does not connect back to Node  36
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Total Number of Connections in Pool: 548
+-------------------------------------------------------------------------------
+Connection Pool: 13152 bytes
+-------------------------------------------------------------------------------
