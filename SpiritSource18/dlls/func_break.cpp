@@ -249,9 +249,9 @@ const char *CBreakable::pSoundsFlesh[] =
 
 const char *CBreakable::pSoundsMetal[] =
 {
-	"debris/hq3/metal1.wav",
-	"debris/hq3/metal2.wav",
-	"debris/hq3/metal3.wav",
+	"debris/hq1/metal1.wav",
+	"debris/hq1/metal2.wav",
+	"debris/hq1/metal3.wav",
 };
 
 const char *CBreakable::pSoundsConcrete[] =

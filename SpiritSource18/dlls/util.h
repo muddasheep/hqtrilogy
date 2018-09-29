@@ -596,3 +596,4 @@ int halfquake_part();
 #define PLAYER_PATH(FILENAME)    ( (halfquake_part()==1) ? "player/hq1" FILENAME   : ((halfquake_part()==2) ? "player/hq2"  FILENAME : "player/hq3" FILENAME) )
 #define FOOTSTEP_PATH(FILENAME)  ( (halfquake_part()==1) ? ""                      : ((halfquake_part()==2) ? "player/hq2"  FILENAME : "player/hq3" FILENAME) )
 #define FAN_PATH(FILENAME)       ( (halfquake_part()==1) ? "fans/hq1" FILENAME     : ((halfquake_part()==2) ? "fans/hq2"    FILENAME : "fans/hq3" FILENAME) )
+#define COMMON_PATH(FILENAME)    ( (halfquake_part()==1) ? "common/hq1" FILENAME   : ((halfquake_part()==2) ? "common/hq2"  FILENAME : "common/hq3" FILENAME) )
