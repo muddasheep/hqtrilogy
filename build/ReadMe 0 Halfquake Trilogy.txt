@@ -88,7 +88,7 @@
   important persons:
 
    ♦ Khimitsu         ♦ Flo              ♦ H4ndy
-   ♦ Pao              ♦ Lexi             ♦ Szaladin
+   ♦ Pao Sebastian    ♦ Lexi             ♦ Szaladin
    ♦ Jazz             ♦ That DR          ♦ Alex Clay
    ♦ moonlyer         ♦ Andrey           ♦ Malastrome15
    ♦ Gabe             ♦ AxelhacK         ♦ RuleTon
