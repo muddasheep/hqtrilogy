@@ -89,7 +89,7 @@
 
    ♦ Khimitsu         ♦ Flo              ♦ H4ndy
    ♦ Pao              ♦ Lexi             ♦ Szaladin
-   ♦ Jazz             ♦ Kim Hanke        ♦ Alex Clay
+   ♦ Jazz             ♦ That DR          ♦ Alex Clay
    ♦ moonlyer         ♦ Andrey           ♦ Malastrome15
    ♦ Gabe             ♦ AxelhacK         ♦ RuleTon
    ♦ Mike Hillard     ♦ funnycreature    ♦ Actine
