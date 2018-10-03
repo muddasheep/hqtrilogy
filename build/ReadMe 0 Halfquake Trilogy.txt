@@ -92,10 +92,10 @@
    ♦ Jazz             ♦ That DR          ♦ Alex Clay
    ♦ moonlyer         ♦ Andrey           ♦ Malastrome15
    ♦ Gabe             ♦ AxelhacK         ♦ RuleTon
-   ♦ Mike Hillard     ♦ funnycreature    ♦ Actine
+   ♦ Mike Hillard     ♦ Syruss           ♦ Actine
    ♦ deliriumstalker  ♦ Matt             ♦ Neoviper
    ♦ Jace Greywool    ♦ wangmauler       ♦ Legendary_Pups
-   ♦ Syruss           ♦ Ronny            ♦ Sharpet
+   ♦ FluffyTail       ♦ Ronny            ♦ Sharpet
 
    ♦ Michael Grankin (C++ support for memory crashes)
    ♦ Unq (draw distance)
@@ -105,6 +105,7 @@
    ♦ Sasha Voskanyan (hq2_pointless)
    ♦ Varik Valefor (beta testing)
    ♦ Pinkerator (beta testing)
+   ♦ funnycreature (beta testing)
 
 [•]--------------------------------------------------------[•]
 
