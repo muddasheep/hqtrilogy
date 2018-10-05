@@ -102,7 +102,7 @@
    ♦ LILmighty (glass rendering error)
    ♦ Kowi (bug report)
    ♦ Vladislav "KeshaFilm" Gavrilov (SoundRecorder)
-   ♦ Sasha Voskanyan (hq2_pointless)
+   ♦ Sasha Voskanyan AKA "SV BOY" (hq2_pointless)
    ♦ Varik Valefor (beta testing)
    ♦ Pinkerator (beta testing)
    ♦ funnycreature (beta testing)
