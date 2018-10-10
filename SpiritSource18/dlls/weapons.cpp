@@ -327,9 +327,10 @@ void W_Precache(void)
 	UTIL_PrecacheOther( "ammo_9mmbox" ); //LRC
 
 	// mp5
-	UTIL_PrecacheOtherWeapon( "weapon_9mmAR" );
+	UTIL_PrecacheOtherWeapon("weapon_9mmAR");
 	UTIL_PrecacheOther( "ammo_9mmAR" );
 	UTIL_PrecacheOther( "ammo_ARgrenades" );
+	UTIL_PrecacheOtherWeapon("weapon_9mmARhqa");
 
 #if !defined( OEM_BUILD ) && !defined( HLDEMO_BUILD )
 	// python

@@ -90,7 +90,7 @@ public:
 #define WEAPON_SATCHEL			15
 #define WEAPON_SNARK			16
 #define WEAPON_SWORDOFSADISM		17
-
+#define WEAPON_MP5HQA     		18
 
 #define WEAPON_ALLWEAPONS		(~(1<<WEAPON_SUIT))
 
@@ -107,6 +107,7 @@ public:
 #define GLOCK_WEIGHT		10
 #define PYTHON_WEIGHT		15
 #define MP5_WEIGHT			15
+#define MP5HQA_WEIGHT		15
 #define SHOTGUN_WEIGHT		15
 #define CROSSBOW_WEIGHT		10
 #define RPG_WEIGHT			20
@@ -140,6 +141,8 @@ public:
 #define PYTHON_MAX_CLIP			6
 #define MP5_MAX_CLIP			50
 #define MP5_DEFAULT_AMMO		25
+#define MP5HQA_MAX_CLIP			50
+#define MP5HQA_DEFAULT_AMMO		25
 #define SHOTGUN_MAX_CLIP		8
 #define CROSSBOW_MAX_CLIP		5
 #define RPG_MAX_CLIP			1
@@ -156,6 +159,8 @@ public:
 #define PYTHON_DEFAULT_GIVE			6
 #define MP5_DEFAULT_GIVE			25
 #define MP5_DEFAULT_AMMO			25
+#define MP5HQA_DEFAULT_GIVE			25
+#define MP5HQA_DEFAULT_AMMO			25
 #define MP5_M203_DEFAULT_GIVE		0
 #define SHOTGUN_DEFAULT_GIVE		12
 #define CROSSBOW_DEFAULT_GIVE		5
@@ -642,6 +647,38 @@ public:
 private:
 	unsigned short m_usMP5;
 	unsigned short m_usMP52;
+};
+
+class CMP5HQA : public CBasePlayerWeapon
+{
+public:
+	void Spawn(void);
+	void Precache(void);
+	int GetItemInfo(ItemInfo *p);
+	int AddToPlayer(CBasePlayer *pPlayer);
+
+	void PrimaryAttack(void);
+	void SecondaryAttack(void);
+	int SecondaryAmmoIndex(void);
+	BOOL Deploy(void);
+	void Holster(int skiplocal = 0);
+	void Reload(void);
+	void WeaponIdle(void);
+	float m_flNextAnimTime;
+	int m_iShell;
+
+	virtual BOOL UseDecrement(void)
+	{
+#if defined( CLIENT_WEAPONS )
+		return TRUE;
+#else
+		return FALSE;
+#endif
+	}
+
+private:
+	unsigned short m_usMP5hqa;
+	unsigned short m_usMP5hqa2;
 };
 
 class CCrossbow : public CBasePlayerWeapon

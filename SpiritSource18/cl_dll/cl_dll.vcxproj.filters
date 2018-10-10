@@ -292,6 +292,9 @@
     <ClCompile Include="..\dlls\swordofsadism.cpp">
       <Filter>Source Files\hl</Filter>
     </ClCompile>
+    <ClCompile Include="..\dlls\mp5hqa.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ammo.h">

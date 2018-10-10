@@ -6131,6 +6131,7 @@ sequence(Choices) : "Animation Sequence (editor)" : 10 =
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_grenade.mdl") = weapon_handgrenade : "Handgrenade Ammo" []
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_hgun.mdl") = weapon_hornetgun : "Hornet Gun" []
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_9mmar.mdl") = weapon_mp5 : "9mm Assault Rifle" []
+@PointClass base(Weapon, Targetx, RenderFields) studio("models/w_9mmar.mdl") = weapon_mp5hqa : "9mm Assault Rifle HQA" []
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_rpg.mdl") = weapon_rpg : "RPG" []
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_satchel.mdl") = weapon_satchel : "Satchel Charge Ammo" []
 @PointClass base(Weapon, Targetx, RenderFields) studio("models/w_shotgun.mdl") = weapon_shotgun : "Shotgun" []

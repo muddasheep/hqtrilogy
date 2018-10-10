@@ -227,6 +227,7 @@ copy "$(TargetDir)"client.dll "c:\games\half-life\spirit\cl_dlls\client.dll"
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS</PreprocessorDefinitions>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
     </ClCompile>
+    <ClCompile Include="..\dlls\mp5hqa.cpp" />
     <ClCompile Include="..\dlls\python.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_DEBUG;_MBCS;WIN32;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS</PreprocessorDefinitions>

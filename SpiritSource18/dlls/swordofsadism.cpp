@@ -67,7 +67,7 @@ int CSwordOfSadism::GetItemInfo(ItemInfo *p)
 	p->iMaxAmmo2 = -1;
 	p->iMaxClip = WEAPON_NOCLIP;
 	p->iSlot = 0;
-	p->iPosition = 0;
+	p->iPosition = 2;
 	p->iId = WEAPON_SWORDOFSADISM;
 	p->iWeight = CROWBAR_WEIGHT;
 	return 1;
