@@ -107,6 +107,7 @@
    ♦ Varik Valefor (beta testing)
    ♦ Pinkerator (beta testing)
    ♦ funnycreature (beta testing)
+   ♦ Intelligence (beta testing)
 
 [•]--------------------------------------------------------[•]
 
