@@ -1822,6 +1822,8 @@ void CBasePlayer::Jump()
 	{
 		pev->velocity = pev->velocity + pev->basevelocity;
 	}
+
+	g_pGameRules->SetAchievement(0);
 }
 
 

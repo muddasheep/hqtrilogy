@@ -24,6 +24,7 @@
 #include	"gamerules.h"
 #include	"teamplay_gamerules.h"
 #include	"skill.h"
+#include	"steamworks.h"
 #include	"game.h"
 
 extern edict_t *EntSelectSpawnPoint( CBaseEntity *pPlayer );
@@ -76,7 +77,13 @@ edict_t *CGameRules :: GetPlayerSpawnSpot( CBasePlayer *pPlayer )
 	{
 		g_startSuit = TRUE;
 	}
-	
+
+	HCFSteamWorks_Create();
+
+	if (g_pSteamWorks) {
+		g_pSteamWorks->Initialize();
+	}
+
 	return pentSpawnSpot;
 }
 
@@ -350,6 +357,43 @@ CGameRules *InstallGameRules( void )
 			return new CHalfLifeMultiplay;
 		}
 	}
+}
+
+
+
+/*
+==============
+SetAchievement
+==============
+*/
+void CGameRules::SetAchievement(int id)
+{
+	if (!g_pSteamWorks) {
+		HCFSteamWorks_Create();
+	}
+	if (g_pSteamWorks) {
+		g_pSteamWorks->PrintAchievements();
+		g_pSteamWorks->SetAchievement(id);
+		g_pSteamWorks->Save();
+	}
+}
+
+void CGameRules::SetAchievement(const char *name)
+{
+	if (!g_pSteamWorks) {
+		HCFSteamWorks_Create();
+	}
+	if (g_pSteamWorks) {
+		g_pSteamWorks->PrintAchievements();
+		g_pSteamWorks->SetAchievement(name);
+		g_pSteamWorks->Save();
+	}
+}
+
+void CGameRules::ReportAchievementProgress(int id, int curp, int maxp)
+{
+	if (g_pSteamWorks)
+		g_pSteamWorks->ReportAchievementProgress(id, curp, maxp);
 }
 
 

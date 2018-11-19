@@ -160,6 +160,12 @@ public:
 
 	// Immediately end a multiplayer game
 	virtual void EndMultiplayerGame( void ) {}
+
+	// Achievements
+	virtual void SetAchievement(int id);
+	virtual void SetAchievement(const char *name);
+
+	virtual void ReportAchievementProgress(int id, int curp, int maxp);
 };
 
 extern CGameRules *InstallGameRules( void );

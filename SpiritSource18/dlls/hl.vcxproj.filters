@@ -342,11 +342,15 @@
     <ClCompile Include="mp5hqa.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="steamworks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Corel\Draw70\Custom\corelpnt.cpl">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="..\steam\steam_api.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="activity.h">
@@ -490,5 +494,11 @@
     <ClInclude Include="weapons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\steam\steam_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\steam\steam_api.lib" />
   </ItemGroup>
 </Project>

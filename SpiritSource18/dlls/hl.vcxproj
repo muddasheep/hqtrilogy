@@ -118,6 +118,9 @@ copy "$(TargetDir)"spirit.dll "c:\games\half-life\spirit\dlls\spirit1.8a1.dll"
       <ImportLibrary>.\Releasehl/spirit.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <OutputFile>$(OutDir)spirit.dll</OutputFile>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
@@ -1235,6 +1238,7 @@ copy "$(TargetDir)"spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NDEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS</PreprocessorDefinitions>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
     </ClCompile>
+    <ClCompile Include="steamworks.cpp" />
     <ClCompile Include="subs.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_DEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS</PreprocessorDefinitions>
@@ -1382,6 +1386,7 @@ copy "$(TargetDir)"spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Corel\Draw70\Custom\corelpnt.cpl" />
+    <None Include="..\steam\steam_api.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\engine\eiface.h" />
@@ -1391,6 +1396,7 @@ copy "$(TargetDir)"spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"
     <ClInclude Include="..\pm_shared\pm_materials.h" />
     <ClInclude Include="..\pm_shared\pm_movevars.h" />
     <ClInclude Include="..\pm_shared\pm_shared.h" />
+    <ClInclude Include="..\steam\steam_api.h" />
     <ClInclude Include="activity.h" />
     <ClInclude Include="activitymap.h" />
     <ClInclude Include="animation.h" />
@@ -1431,6 +1437,9 @@ copy "$(TargetDir)"spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"
     <ClInclude Include="util.h" />
     <ClInclude Include="vector.h" />
     <ClInclude Include="weapons.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\steam\steam_api.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
