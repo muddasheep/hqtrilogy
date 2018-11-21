@@ -78,12 +78,6 @@ edict_t *CGameRules :: GetPlayerSpawnSpot( CBasePlayer *pPlayer )
 		g_startSuit = TRUE;
 	}
 
-	HCFSteamWorks_Create();
-
-	if (g_pSteamWorks) {
-		g_pSteamWorks->Initialize();
-	}
-
 	return pentSpawnSpot;
 }
 
@@ -370,6 +364,7 @@ void CGameRules::SetAchievement(int id)
 {
 	if (!g_pSteamWorks) {
 		HCFSteamWorks_Create();
+		g_pSteamWorks->Initialize();
 	}
 	if (g_pSteamWorks) {
 		g_pSteamWorks->PrintAchievements();
@@ -382,6 +377,7 @@ void CGameRules::SetAchievement(const char *name)
 {
 	if (!g_pSteamWorks) {
 		HCFSteamWorks_Create();
+		g_pSteamWorks->Initialize();
 	}
 	if (g_pSteamWorks) {
 		g_pSteamWorks->PrintAchievements();
