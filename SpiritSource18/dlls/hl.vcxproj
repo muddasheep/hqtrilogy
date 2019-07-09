@@ -76,7 +76,7 @@
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\debughl\</OutDir>
+    <OutDir>.\Releasehl</OutDir>
     <IntDir>.\debughl\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
@@ -193,7 +193,7 @@ copy $(TargetDir)spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"</Command
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <MinimalRebuild>true</MinimalRebuild>
-      <DebugInformationFormat>None</DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <AdditionalIncludeDirectories>..\dlls;..\engine;..\common;..\game_shared;..\pm_shared;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\debughl\</AssemblerListingLocation>

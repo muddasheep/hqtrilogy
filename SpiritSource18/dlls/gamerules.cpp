@@ -362,10 +362,6 @@ SetAchievement
 */
 void CGameRules::SetAchievement(int id)
 {
-	if (!g_pSteamWorks) {
-		HCFSteamWorks_Create();
-		g_pSteamWorks->Initialize();
-	}
 	if (g_pSteamWorks) {
 		g_pSteamWorks->PrintAchievements();
 		g_pSteamWorks->SetAchievement(id);
@@ -375,10 +371,6 @@ void CGameRules::SetAchievement(int id)
 
 void CGameRules::SetAchievement(const char *name)
 {
-	if (!g_pSteamWorks) {
-		HCFSteamWorks_Create();
-		g_pSteamWorks->Initialize();
-	}
 	if (g_pSteamWorks) {
 		g_pSteamWorks->PrintAchievements();
 		g_pSteamWorks->SetAchievement(name);

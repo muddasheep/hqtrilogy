@@ -936,3 +936,8 @@ void GameDLLInit( void )
 	SERVER_COMMAND( "exec skill.cfg\n" );
 }
 
+void GameDLLShutdown(void)
+{
+	if (g_pSteamWorks)
+		g_pSteamWorks->Shutdown();
+}

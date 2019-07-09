@@ -16,12 +16,6 @@
 #define HCF_STAT_VERSION_NUMBER				1
 #define HCF_ACHIEVEMENT_VERSION_NUMBER		1
 
-typedef struct HCFSteamStat_s {
-	const char	*m_name;
-	int			m_id;
-	int			m_value;
-} HCFSTAT;
-
 typedef struct HCFSteamAchievement_s {
 	const char	*m_name;
 	int			m_id;
@@ -38,13 +32,8 @@ enum {
 	HCF_ACHIEVEMENT_VERSION,
 };
 
-static HCFSTAT g_Stat[] = {
-	HCF_STAT( HCF_STAT_VERSION,					"StatVersion" ),
-	HCF_STAT( HCF_ACHIEVEMENT_VERSION,			"AchievementVersion" ),
-};
-
 static HCFACH g_Ach[] = {
-	HCF_ACH( HQ_PRESENT1,						"HQ_PRESENT1" ),
+	HCF_ACH( HQ_PRESENT1, "HQ_PRESENT1" ),
 };
 
 //////////////////////////////////////////////////////////////////////////
@@ -71,18 +60,12 @@ public:
 
 protected:
 	bool IsLoggedOn( void );
-	void CheckForReset( void );
-	bool RequestStats( void );
-	bool StoreStats( void );
 	void MaintainAppid( void );
 	
-	HCFSTAT *GetStatPointer( int id );
 	HCFACH *GetAchievementPointer( int id );
 	HCFACH *GetAchievementPointer( const char *name );
 	void SetStatById( int id, int value );
 
-	STEAM_CALLBACK( CHCFSteamWorks, OnUserStatsReceived, UserStatsReceived_t, m_CallbackUserStatsReceived );
-	STEAM_CALLBACK( CHCFSteamWorks, OnUserStatsStored, UserStatsStored_t, m_CallbackUserStatsStored );
 	STEAM_CALLBACK( CHCFSteamWorks, OnAchievementStored, UserAchievementStored_t, m_CallbackAchievementStored );
 
 private:
@@ -90,7 +73,6 @@ private:
 	UINT32	m_uiAppID;
 	char	m_szSUID[128];
 	HCFACH	*m_pAchievements;
-	HCFSTAT	*m_pStats;
 	size_t	m_uiAchievementCount;
 	size_t	m_uiStatCount;
 	/*HCFStatData_t *m_pExternalStat;*/
@@ -104,8 +86,6 @@ void HCFSteamWorks_Create( void )
 }
 
 CHCFSteamWorks :: CHCFSteamWorks() :
-	m_CallbackUserStatsReceived( this, &CHCFSteamWorks::OnUserStatsReceived ),
-	m_CallbackUserStatsStored( this, &CHCFSteamWorks::OnUserStatsStored ),
 	m_CallbackAchievementStored( this, &CHCFSteamWorks::OnAchievementStored )
 {
 	m_fInitialized = FALSE;
@@ -113,9 +93,7 @@ CHCFSteamWorks :: CHCFSteamWorks() :
 	memset( m_szSUID, 0, sizeof(m_szSUID) );
 
 	m_pAchievements = g_Ach;
-	m_pStats = g_Stat;
 	m_uiAchievementCount = sizeof(g_Ach) / sizeof(g_Ach[0]);
-	m_uiStatCount = sizeof(g_Stat) / sizeof(g_Stat[0]);
 }
 
 void CHCFSteamWorks :: Initialize( void )
@@ -153,10 +131,6 @@ void CHCFSteamWorks :: Initialize( void )
 
 	m_fInitialized = TRUE;
 	ALERT( at_console, "SteamWorks initialized.\n" );
-
-	//SteamUserStats()->ResetAllStats(true);
-
-	Load();
 }
 
 void CHCFSteamWorks :: Shutdown( void )
@@ -170,12 +144,6 @@ void CHCFSteamWorks :: Think( void )
 	SteamAPI_RunCallbacks();
 }
 
-/*
-void CHCFSteamWorks :: BindStatData( HCFStatData_t *psd )
-{
-	m_pExternalStat = psd;
-}
-*/
 void CHCFSteamWorks :: MaintainAppid( void )
 {
 	char buffer[32];
@@ -202,14 +170,10 @@ void CHCFSteamWorks :: MaintainAppid( void )
 
 void CHCFSteamWorks :: Load( void )
 {
-	// request stats from Steam
-	RequestStats();
 }
 
 void CHCFSteamWorks :: Save( void )
 {
-	// save stats to Steam
-	StoreStats();
 }
 
 const char *CHCFSteamWorks :: GetSUID( void ) const
@@ -222,111 +186,6 @@ bool CHCFSteamWorks :: IsLoggedOn( void )
 	if ( !m_fInitialized )
 		return false;
 	return SteamUser()->BLoggedOn();
-}
-
-void CHCFSteamWorks :: CheckForReset( void )
-{
-	bool bResetAchievements = false;
-
-	// check for stat reset
-	HCFSTAT *ps = GetStatPointer( HCF_STAT_VERSION );
-	if ( !ps || ps->m_value == HCF_STAT_VERSION_NUMBER )
-		return;
-
-	HCFSTAT *pa = GetStatPointer( HCF_ACHIEVEMENT_VERSION );
-	if ( pa && pa->m_value != HCF_ACHIEVEMENT_VERSION_NUMBER ) {
-		SteamUserStats()->SetStat( pa->m_name, HCF_ACHIEVEMENT_VERSION_NUMBER );
-		bResetAchievements = true;
-	}
-
-	ALERT( at_aiconsole, "SteamWorks: ResetAllStats( %s )\n", bResetAchievements ? "true" : "false" );
-	SteamUserStats()->ResetAllStats( bResetAchievements );
-
-	SteamUserStats()->SetStat( ps->m_name, HCF_STAT_VERSION_NUMBER );
-	SteamUserStats()->SetStat( pa->m_name, HCF_ACHIEVEMENT_VERSION_NUMBER );
-
-	ps = m_pStats;
-	for ( size_t i = 0; i < m_uiStatCount; ++i, ++ps )
-		SteamUserStats()->GetStat( ps->m_name, &ps->m_value );
-
-	HCFACH *pp = m_pAchievements;
-	for ( size_t i = 0; i < m_uiAchievementCount; ++i, ++pp )
-		SteamUserStats()->GetAchievement( pp->m_name, &pp->m_achieved );
-}
-
-//////////////////////////////////////////////////////////////////////////
-// STEAM STATS
-//////////////////////////////////////////////////////////////////////////
-HCFSTAT *CHCFSteamWorks :: GetStatPointer( int id )
-{
-	HCFSTAT *p = m_pStats;
-	for ( size_t i = 0; i < m_uiStatCount; ++i, ++p )
-		if ( p->m_id == id )
-			return p;
-	return NULL;
-}
-
-void CHCFSteamWorks :: SetStatById( int id, int value )
-{
-	HCFSTAT *p = GetStatPointer( id );
-	if ( p ) p->m_value = value;
-}
-
-bool CHCFSteamWorks :: RequestStats( void )
-{
-	// check if we're initialized and logged on
-	if ( !IsLoggedOn() )
-		return false;
-
-	// request user stats
-	return SteamUserStats()->RequestCurrentStats();
-}
-
-bool CHCFSteamWorks :: StoreStats( void )
-{
-	// check if we're initialized and logged on
-	if ( !IsLoggedOn() )
-		return false;
-
-	// process all stats
-	HCFSTAT *p = m_pStats;
-	for ( size_t i = 0; i < m_uiStatCount; ++i, ++p )
-		SteamUserStats()->SetStat( p->m_name, p->m_value );
-
-	// store user stats
-	return SteamUserStats()->StoreStats();
-}
-
-void CHCFSteamWorks :: OnUserStatsReceived( UserStatsReceived_t *pCallback )
-{
-}
-
-void CHCFSteamWorks :: OnUserStatsStored( UserStatsStored_t *pCallback )
-{
-	// we may get callbacks for other games' stats arriving, ignore them
-	if ( m_uiAppID != pCallback->m_nGameID )
-		return;
-
-	switch ( pCallback->m_eResult ) {
-	case k_EResultOK:
-		// Succeeded
-		ALERT( at_aiconsole, "SteamWorks: stats stored to Steam\n" );
-		break;
-	case k_EResultInvalidParam:
-		// One or more stats we set broke a constraint. They've been reverted,
-		// and we should re-iterate the values now to keep in sync.
-		{
-			// Fake up a callback here so that we re-load the values.
-			UserStatsReceived_t callback;
-			callback.m_eResult = k_EResultOK;
-			callback.m_nGameID = m_uiAppID;
-			OnUserStatsReceived( &callback );
-		}
-		break;
-	default:
-		ALERT( at_aiconsole, "SteamWorks: failed to store stats to Steam (error code %i)\n", (int)pCallback->m_eResult );
-		break;
-	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -352,7 +211,6 @@ HCFACH *CHCFSteamWorks :: GetAchievementPointer( const char *name )
 
 void CHCFSteamWorks :: OnAchievementStored( UserAchievementStored_t *pCallback )
 {
-	RequestStats();
 	ALERT(at_console, "SteamWorks: got a callback... \n");
 
 	// we may get callbacks for other games' stats arriving, ignore them
@@ -364,13 +222,13 @@ void CHCFSteamWorks :: OnAchievementStored( UserAchievementStored_t *pCallback )
 
 bool CHCFSteamWorks :: SetAchievement( int id )
 {
-	ALERT(at_console, "is logged on?");
+	ALERT(at_console, "is logged on?\n");
 
 	// check if we're initialized and logged on
 	if ( !IsLoggedOn() )
 		return false;
 
-	ALERT(at_console, "does achievement exist?");
+	ALERT(at_console, "does achievement exist?\n");
 
 	HCFACH *p = GetAchievementPointer( id );
 	if ( !p || p->m_achieved ) {
@@ -386,7 +244,6 @@ bool CHCFSteamWorks :: SetAchievement( int id )
 	SteamUserStats()->SetAchievement( p->m_name );
 	p->m_achieved = true;
 
-	SteamUserStats()->StoreStats();
 	return true;
 }
 
@@ -414,7 +271,6 @@ bool CHCFSteamWorks :: SetAchievement( const char *name )
 	SteamUserStats()->SetAchievement( p->m_name );
 	p->m_achieved = true;
 
-	SteamUserStats()->StoreStats();
 	return true;
 }
 
