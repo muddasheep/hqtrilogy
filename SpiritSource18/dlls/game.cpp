@@ -15,6 +15,7 @@
 #include "extdll.h"
 #include "eiface.h"
 #include "util.h"
+#include "steamworks.h"
 #include "game.h"
 
 cvar_t	displaysoundlist = {"displaysoundlist","0"};
@@ -477,6 +478,11 @@ cvar_t	sk_player_leg3	= { "sk_player_leg3","1" };
 // This gets called one time when the game is initialied
 void GameDLLInit( void )
 {
+	if (!g_pSteamWorks)
+		HCFSteamWorks_Create();
+
+	g_pSteamWorks->Initialize();
+
 	// Register cvars here:
 
 	g_psv_gravity = CVAR_GET_POINTER( "sv_gravity" );

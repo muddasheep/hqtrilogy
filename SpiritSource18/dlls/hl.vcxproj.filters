@@ -2,15 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{78355991-5974-4a61-b9d9-faa20d6c78e0}</UniqueIdentifier>
+      <UniqueIdentifier>{bb41e094-dea7-4fb1-bb68-8d361d213814}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{3d96570b-2f85-4192-8f1b-4c623a0b9396}</UniqueIdentifier>
+      <UniqueIdentifier>{f7143f40-7b07-4a96-a666-58911fe54e75}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{4aa247e0-7925-4e48-b0a4-ff78803b5f71}</UniqueIdentifier>
+      <UniqueIdentifier>{3c262484-016e-4f1c-853b-d79f38eeedee}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
   </ItemGroup>
@@ -330,27 +330,9 @@
     <ClCompile Include="zombie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="swordofsadism.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dragon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="grayslave.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mp5hqa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="steamworks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\Corel\Draw70\Custom\corelpnt.cpl">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="..\steam\steam_api.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="activity.h">
@@ -492,6 +474,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="steamworks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\steam\steam_api.h">

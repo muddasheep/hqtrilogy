@@ -2,23 +2,101 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{6df8d206-d372-4a24-870c-a6a6869dbf35}</UniqueIdentifier>
+      <UniqueIdentifier>{b1c51484-e67a-44cd-b1ae-0b867be0ac82}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
     </Filter>
     <Filter Include="Source Files\hl">
-      <UniqueIdentifier>{18036e96-76bd-4224-b508-dc1d2c37e6c5}</UniqueIdentifier>
+      <UniqueIdentifier>{f8f6e8df-2e6a-4885-a462-e1089d79cf68}</UniqueIdentifier>
       <Extensions>*.CPP</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{cede561d-8b4c-4a4e-823a-80eec6ce76f1}</UniqueIdentifier>
+      <UniqueIdentifier>{613f434d-1e6d-4514-97d2-d8b2e8f2a14a}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{908aaacd-1b3a-48f8-a1ff-9a2d30ff915e}</UniqueIdentifier>
+      <UniqueIdentifier>{3fe6d536-67d6-4e86-805c-0de7f2d16745}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\dlls\crossbow.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\crowbar.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomMenu.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\egon.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="ev_hldm.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\gauss.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\glock.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\handgrenade.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_baseentity.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_events.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_objects.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_weapons.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\hornetgun.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\interface.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\mp5.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\python.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\rpg.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\satchel.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\shotgun.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\squeakgrenade.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\tripmine.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_scrollbar2.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_slider2.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\voice_banmgr.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\voice_status.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\voice_vgui_tweakdlg.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
     <ClCompile Include="ammo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -211,89 +289,11 @@
     <ClCompile Include="view.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\dlls\crossbow.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\crowbar.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="CustomMenu.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\egon.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="ev_hldm.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\gauss.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\glock.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\handgrenade.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="hl\hl_baseentity.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="hl\hl_events.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="hl\hl_objects.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="hl\hl_weapons.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\hornetgun.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\common\interface.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\mp5.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\python.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\rpg.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\satchel.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\shotgun.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\squeakgrenade.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\dlls\tripmine.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\game_shared\vgui_scrollbar2.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\game_shared\vgui_slider2.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\game_shared\voice_banmgr.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\game_shared\voice_status.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\game_shared\voice_vgui_tweakdlg.cpp">
-      <Filter>Source Files\hl</Filter>
-    </ClCompile>
     <ClCompile Include="..\dlls\swordofsadism.cpp">
-      <Filter>Source Files\hl</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\dlls\mp5hqa.cpp">
-      <Filter>Source Files\hl</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

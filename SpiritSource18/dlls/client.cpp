@@ -34,6 +34,7 @@
 #include "client.h"
 #include "soundent.h"
 #include "gamerules.h"
+#include "steamworks.h"
 #include "game.h"
 #include "customentity.h"
 #include "weapons.h"
@@ -772,6 +773,9 @@ void ParmsChangeLevel( void )
 //
 void StartFrame( void )
 {
+	if (g_pSteamWorks)
+		g_pSteamWorks->Think();
+
 	if ( g_pGameRules )
 		g_pGameRules->Think();
 
