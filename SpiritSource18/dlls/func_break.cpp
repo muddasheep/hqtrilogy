@@ -26,6 +26,7 @@
 #include "func_break.h"
 #include "decals.h"
 #include "explode.h"
+#include "gamerules.h"
 
 extern DLL_GLOBAL Vector		g_vecAttackDir;
 
@@ -1028,6 +1029,7 @@ void CBreakable::Die( void )
 
 	// Fire targets on break
 	SUB_UseTargets( NULL, USE_TOGGLE, 0 );
+	g_pGameRules->SetAchievementForTriggerInMap(STRING(pev->target));
 
 	if (m_iRespawnTime == -1)
 	{

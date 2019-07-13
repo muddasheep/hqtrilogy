@@ -270,6 +270,7 @@ copy $(TargetDir)spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"</Command
     <ClCompile Include="debugger.cpp" />
     <ClCompile Include="defaultai.cpp" />
     <ClCompile Include="doors.cpp" />
+    <ClCompile Include="dragon.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="egon.cpp" />
     <ClCompile Include="explode.cpp" />
@@ -311,6 +312,7 @@ copy $(TargetDir)spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"</Command
     <ClCompile Include="mortar.cpp" />
     <ClCompile Include="movewith.cpp" />
     <ClCompile Include="mp5.cpp" />
+    <ClCompile Include="mp5hqa.cpp" />
     <ClCompile Include="multiplay_gamerules.cpp" />
     <ClCompile Include="nihilanth.cpp" />
     <ClCompile Include="nodes.cpp" />
@@ -336,6 +338,7 @@ copy $(TargetDir)spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"</Command
     <ClCompile Include="squeakgrenade.cpp" />
     <ClCompile Include="steamworks.cpp" />
     <ClCompile Include="subs.cpp" />
+    <ClCompile Include="swordofsadism.cpp" />
     <ClCompile Include="talkmonster.cpp" />
     <ClCompile Include="teamplay_gamerules.cpp" />
     <ClCompile Include="tempmonster.cpp" />

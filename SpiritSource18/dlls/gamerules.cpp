@@ -16,6 +16,7 @@
 // GameRules.cpp
 //=========================================================
 
+#include    <string>         // std::string
 #include	"extdll.h"
 #include	"util.h"
 #include	"cbase.h"
@@ -372,9 +373,90 @@ void CGameRules::SetAchievement(int id)
 void CGameRules::SetAchievement(const char *name)
 {
 	if (g_pSteamWorks) {
+		ALERT(at_debug, "setting \"%s\"\n ", STRING(name));
 		g_pSteamWorks->PrintAchievements();
 		g_pSteamWorks->SetAchievement(name);
 		g_pSteamWorks->Save();
+	}
+}
+
+void CGameRules::SetAchievementForTriggerInMap(const char *triggername)
+{
+	/*if (CVAR_GET_FLOAT("sv_cheats") == 1.0) {
+		return;
+	}*/
+
+	ALERT(at_debug, "achievement target name \"%s\" in \"%s\"\n ", triggername, STRING(gpGlobals->mapname));
+
+	std::string trigger(triggername);
+	std::string map(STRING(gpGlobals->mapname));
+
+	if (trigger == "asecret" && map == "halfquake") {
+		return SetAchievement(HQ_SECRET);
+	}
+
+	if (trigger == "someth1ng" && map == "halfquake3") {
+		return SetAchievement(HQ_BUTTONS);
+	}
+
+	if (trigger == "asecret" && map == "halfquake6") {
+		return SetAchievement(HQ_GRENADE);
+	}
+
+	if (trigger == "c3_end_end_end" && map == "halfquake12") {
+		return SetAchievement(HQ_SOMOS1);
+	}
+
+	if (trigger == "hq2_5_hidden" && map == "hq2_5") {
+		return SetAchievement(HQ_DEATH);
+	}
+
+	if (trigger == "activate_guitar" && map == "hq2_7") {
+		return SetAchievement(HQ_MUSIC);
+	}
+
+	if (trigger == "hq215easter" && map == "hq2_15") {
+		return SetAchievement(HQ_MAZE);
+	}
+
+	if (trigger == "sap_drachi_toooot" && map == "hq2_23") {
+		return SetAchievement(HQ_DRAGON);
+	}
+
+	if (trigger == "pat_daobnsequ" && map == "hq2_24") {
+		return SetAchievement(HQ_PATIENCE);
+	}
+
+	if (trigger == "viol_disturb1" && map == "hq2_27") {
+		return SetAchievement(HQ_JUMP);
+	}
+
+	if (trigger == "somos_di-stroy" && map == "hq2_29") {
+		return SetAchievement(HQ_SOMOS2);
+	}
+
+	if (trigger == "xiiau" && map == "hq3_1") {
+		return SetAchievement(HQ_RISE);
+	}
+
+	if (trigger == "dancefinale" && map == "hq3_3") {
+		return SetAchievement(HQ_DANCE);
+	}
+
+	if (trigger == "inflictmary5" && map == "hq3_5") {
+		return SetAchievement(HQ_COFFEE);
+	}
+
+	if (trigger == "pushcookie" && map == "hq3_7i") {
+		return SetAchievement(HQ_VICTIM);
+	}
+
+	if (trigger == "s7d" && map == "hq3_9") {
+		return SetAchievement(HQ_NOTES);
+	}
+
+	if (trigger == "somos_is_dead" && map == "hq3_13ii") {
+		return SetAchievement(HQ_SOMOS3);
 	}
 }
 

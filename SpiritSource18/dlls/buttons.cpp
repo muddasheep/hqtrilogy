@@ -24,6 +24,7 @@
 #include "util.h"
 #include "cbase.h"
 #include "saverestore.h"
+#include "gamerules.h"
 #include "doors.h"
 
 
@@ -435,6 +436,7 @@ void CMultiSource::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE 
 		if ( m_globalstate )
 			useType = USE_ON;
 		SUB_UseTargets( NULL, useType, 0 );
+		g_pGameRules->SetAchievementForTriggerInMap(STRING(pev->target));
 	}
 }
 
@@ -1032,7 +1034,8 @@ void CBaseButton::TriggerAndWait( void )
 	else if (m_iStyle <= -32) LIGHT_STYLE(-m_iStyle, "z");
 
 	SUB_UseTargets( m_hActivator, USE_TOGGLE, 0 );
-	
+	g_pGameRules->SetAchievementForTriggerInMap(STRING(pev->target));
+
 	// If button automatically comes back out, start it moving out.
 	// Else re-instate touch method
 	if (m_fStayPushed || FBitSet ( pev->spawnflags, SF_BUTTON_TOGGLE ) )

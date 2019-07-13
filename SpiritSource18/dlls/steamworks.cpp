@@ -33,7 +33,23 @@ enum {
 };
 
 static HCFACH g_Ach[] = {
-	HCF_ACH( HQ_PRESENT1, "HQ_PRESENT1" ),
+	HCF_ACH(HQ_SOMOS1, "HQ_SOMOS1"),
+	HCF_ACH(HQ_SOMOS2, "HQ_SOMOS2"),
+	HCF_ACH(HQ_SOMOS3, "HQ_SOMOS3"),
+	HCF_ACH(HQ_DRAGON, "HQ_DRAGON"),
+	HCF_ACH(HQ_VICTIM, "HQ_VICTIM"),
+	HCF_ACH(HQ_NOTES, "HQ_NOTES"),
+	HCF_ACH(HQ_PATIENCE, "HQ_PATIENCE"),
+	HCF_ACH(HQ_SECRET, "HQ_SECRET"),
+	HCF_ACH(HQ_MAZE, "HQ_MAZE"),
+	HCF_ACH(HQ_RISE, "HQ_RISE"),
+	HCF_ACH(HQ_BUTTONS, "HQ_BUTTONS"),
+	HCF_ACH(HQ_MUSIC, "HQ_MUSIC"),
+	HCF_ACH(HQ_COFFEE, "HQ_COFFEE"),
+	HCF_ACH(HQ_DEATH, "HQ_DEATH"),
+	HCF_ACH(HQ_GRENADE, "HQ_GRENADE"),
+	HCF_ACH(HQ_JUMP, "HQ_JUMP"),
+	HCF_ACH(HQ_DANCE, "HQ_DANCE"),
 };
 
 //////////////////////////////////////////////////////////////////////////
@@ -64,7 +80,6 @@ protected:
 	
 	HCFACH *GetAchievementPointer( int id );
 	HCFACH *GetAchievementPointer( const char *name );
-	void SetStatById( int id, int value );
 
 	STEAM_CALLBACK( CHCFSteamWorks, OnAchievementStored, UserAchievementStored_t, m_CallbackAchievementStored );
 
@@ -98,8 +113,6 @@ CHCFSteamWorks :: CHCFSteamWorks() :
 
 void CHCFSteamWorks :: Initialize( void )
 {
-	HCFSteamWorks_Create();
-
 	ASSERT( m_fInitialized == FALSE );
 
 	ALERT( at_console, "Initializing SteamWorks...\n" );

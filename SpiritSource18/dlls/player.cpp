@@ -1822,8 +1822,6 @@ void CBasePlayer::Jump()
 	{
 		pev->velocity = pev->velocity + pev->basevelocity;
 	}
-
-	g_pGameRules->SetAchievement(0);
 }
 
 // This is a glorious hack to find free space when you've crouched into some solid space

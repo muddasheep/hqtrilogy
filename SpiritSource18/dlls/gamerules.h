@@ -164,6 +164,7 @@ public:
 	// Achievements
 	virtual void SetAchievement(int id);
 	virtual void SetAchievement(const char *name);
+	virtual void SetAchievementForTriggerInMap(const char *triggername);
 
 	virtual void ReportAchievementProgress(int id, int curp, int maxp);
 };

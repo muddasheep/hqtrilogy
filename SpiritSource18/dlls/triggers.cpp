@@ -886,6 +886,7 @@ void CMultiManager :: ManagerThink ( void )
 		if (pev->spawnflags & SF_MULTIMAN_DEBUG)
 			ALERT(at_debug, "DEBUG: multi_manager \"%s\": firing \"%s\".\n", STRING(pev->targetname), STRING( m_iTargetName[ index ] ));
 		FireTargets( STRING( m_iTargetName[ index ] ), m_hActivator, this, m_triggerType, 0 );
+		g_pGameRules->SetAchievementForTriggerInMap(STRING(m_iTargetName[index]));
 		index++;
 	}
 }
@@ -3262,6 +3263,7 @@ void CTriggerMultiple :: ActivateMultiTrigger( CBaseEntity *pActivator )
 
 	m_hActivator = pActivator;
 	SUB_UseTargets( m_hActivator, USE_TOGGLE, 0 );
+	g_pGameRules->SetAchievementForTriggerInMap(STRING(pev->target));
 
 	if ( pev->message && pActivator->IsPlayer() )
 	{
