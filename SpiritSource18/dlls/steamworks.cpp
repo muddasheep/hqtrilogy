@@ -81,7 +81,9 @@ protected:
 	HCFACH *GetAchievementPointer( int id );
 	HCFACH *GetAchievementPointer( const char *name );
 
-	STEAM_CALLBACK( CHCFSteamWorks, OnAchievementStored, UserAchievementStored_t, m_CallbackAchievementStored );
+	STEAM_CALLBACK(CHCFSteamWorks, OnUserStatsReceived, UserStatsReceived_t, m_CallbackUserStatsReceived);
+	STEAM_CALLBACK(CHCFSteamWorks, OnUserStatsStored, UserStatsStored_t, m_CallbackUserStatsStored);
+	STEAM_CALLBACK(CHCFSteamWorks, OnAchievementStored, UserAchievementStored_t, m_CallbackAchievementStored);
 
 private:
 	BOOL	m_fInitialized;
@@ -101,7 +103,9 @@ void HCFSteamWorks_Create( void )
 }
 
 CHCFSteamWorks :: CHCFSteamWorks() :
-	m_CallbackAchievementStored( this, &CHCFSteamWorks::OnAchievementStored )
+	m_CallbackUserStatsReceived(this, &CHCFSteamWorks::OnUserStatsReceived),
+	m_CallbackUserStatsStored(this, &CHCFSteamWorks::OnUserStatsStored),
+	m_CallbackAchievementStored(this, &CHCFSteamWorks::OnAchievementStored)
 {
 	m_fInitialized = FALSE;
 	m_uiAppID = 0;
@@ -187,6 +191,11 @@ void CHCFSteamWorks :: Load( void )
 
 void CHCFSteamWorks :: Save( void )
 {
+	if (!IsLoggedOn())
+		return;
+
+	ALERT(at_console, "SteamWorks: storing stats... \n");
+	SteamUserStats()->StoreStats();
 }
 
 const char *CHCFSteamWorks :: GetSUID( void ) const
@@ -231,6 +240,23 @@ void CHCFSteamWorks :: OnAchievementStored( UserAchievementStored_t *pCallback )
 		return;
 
 	ALERT( at_console, "SteamWorks: stored achievement for Steam\n" );
+}
+
+void CHCFSteamWorks::OnUserStatsStored(UserStatsStored_t *pCallback)
+{
+	// we may get callbacks for other games' stats arriving, ignore them
+	if (m_uiAppID != pCallback->m_nGameID)
+		return;
+
+	ALERT(at_console, "SteamWorks: stored stats for Steam\n");
+}
+
+void CHCFSteamWorks::OnUserStatsReceived(UserStatsReceived_t *pCallback)
+{
+	if (m_uiAppID != pCallback->m_nGameID)
+		return;
+
+	ALERT(at_console, "SteamWorks: received stats from Steam\n");
 }
 
 bool CHCFSteamWorks :: SetAchievement( int id )
