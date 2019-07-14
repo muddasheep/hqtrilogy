@@ -342,6 +342,9 @@
     <ClCompile Include="mp5hqa.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="grayslave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="activity.h">

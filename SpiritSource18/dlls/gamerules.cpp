@@ -411,7 +411,7 @@ void CGameRules::SetAchievementForTriggerInMap(const char *triggername)
 		return SetAchievement(HQ_DEATH);
 	}
 
-	if (trigger == "activate_guitar" && map == "hq2_7") {
+	if (trigger == "deactivate_guitar" && map == "hq2_7") {
 		return SetAchievement(HQ_MUSIC);
 	}
 

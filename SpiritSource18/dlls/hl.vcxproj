@@ -286,6 +286,7 @@ copy $(TargetDir)spirit.dll "C:\games\half-life\spirit\dlls\spirit.dll"</Command
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="glock.cpp" />
     <ClCompile Include="gman.cpp" />
+    <ClCompile Include="grayslave.cpp" />
     <ClCompile Include="handgrenade.cpp" />
     <ClCompile Include="hassassin.cpp" />
     <ClCompile Include="headcrab.cpp" />
