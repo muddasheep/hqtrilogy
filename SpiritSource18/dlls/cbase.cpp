@@ -1011,4 +1011,26 @@ CBaseEntity * CBaseEntity::Create( char *szName, const Vector &vecOrigin, const 
 	return pEntity;
 }
 
+extern "C" EXPORT int GetNewDLLFunctions(NEW_DLL_FUNCTIONS *pFunctionTable, int *interfaceVersion);
+extern void GameDLLShutdown();
 
+void Stub_DispatchFreeEntPrivateData(edict_t *pent) {}
+int	Stub_DispatchShouldCollide(edict_t *pentTouched, edict_t *pentOther) { return 1; }
+
+static NEW_DLL_FUNCTIONS gNewFunctionTable =
+{
+	Stub_DispatchFreeEntPrivateData,
+	GameDLLShutdown,
+	Stub_DispatchShouldCollide,
+};
+
+int GetNewDLLFunctions(NEW_DLL_FUNCTIONS *pFunctionTable, int *interfaceVersion)
+{
+	if (!pFunctionTable || *interfaceVersion != NEW_DLL_FUNCTIONS_VERSION) {
+		// Tell engine what version we had, so it can figure out who is out of date.
+		*interfaceVersion = NEW_DLL_FUNCTIONS_VERSION;
+		return 0;
+	}
+	memcpy(pFunctionTable, &gNewFunctionTable, sizeof(NEW_DLL_FUNCTIONS));
+	return 1;
+}

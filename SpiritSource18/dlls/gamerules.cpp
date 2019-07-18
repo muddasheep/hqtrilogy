@@ -427,7 +427,7 @@ void CGameRules::SetAchievementForTriggerInMap(const char *triggername)
 		return SetAchievement(HQ_PATIENCE);
 	}
 
-	if (trigger == "viol_disturb1" && map == "hq2_27") {
+	if (trigger == "viol_disturb2" && map == "hq2_27") {
 		return SetAchievement(HQ_JUMP);
 	}
 
